@@ -1,0 +1,11 @@
+name: Gopher
+release_date: 2021-12
+affiliation:
+  - DeepMind
+language:
+  - English
+paper/news: https://storage.googleapis.com/deepmind-media/research/language-research/Training%20Gopher.pdf
+parameters_dense:
+  - 1.4B
+  - 7.1B
+  - 280B

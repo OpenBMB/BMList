@@ -1,0 +1,9 @@
+name: Turing NLG
+release_date: 2020-03
+affiliation:
+  - Microsoft
+language:
+  - English
+paper/news: https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/
+parameters_dense:
+  - 17B

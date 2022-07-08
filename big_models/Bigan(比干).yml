@@ -1,0 +1,11 @@
+name: Bigan(比干)
+release_date: 2021-11
+affiliation:
+  - IDEA
+language:
+  - Chinese
+paper/news: https://idea.edu.cn/fengshenbang-lm.html
+parameters_dense:
+  - 1.1B
+model: https://huggingface.co/IDEA-CCNL/Bigan-Transformer-XL-denoise-1.1B
+code: https://fengshenbang-doc.readthedocs.io/zh/latest/docs/%E6%AF%94%E5%B9%B2%E7%B3%BB%E5%88%97/Bigan-Transformer-XL-denoise-1.1B.html

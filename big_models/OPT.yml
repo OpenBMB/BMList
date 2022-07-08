@@ -1,0 +1,17 @@
+name: OPT
+release_date: 2022-05
+affiliation:
+  - Meta
+language:
+  - English
+paper/news: https://arxiv.org/abs/2205.01068
+parameters_dense:
+  - 1.3B
+  - 2.7B
+  - 6.7B
+  - 13B
+  - 30B
+  - 66B
+  - 175B
+model: https://github.com/facebookresearch/metaseq/tree/main/projects/OPT#pretrained-model-weights
+code: https://github.com/facebookresearch/metaseq

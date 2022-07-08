@@ -1,0 +1,16 @@
+name: InCoder
+release_date: 2022-04
+affiliation:
+  - Facebook
+  - University of Washington
+  - UC Berkeley
+  - TTIC
+  - CMU
+language:
+  - English
+paper/news: https://arxiv.org/abs/2204.05999
+parameters_dense:
+  - 1.3B
+  - 6.7B
+model: https://sites.google.com/view/incoder-code-models
+code: https://github.com/dpfried/incoder/blob/main/README.md

@@ -1,0 +1,11 @@
+name: Yuan(源) 1.0
+release_date: 2021-10
+affiliation:
+  - Inspur Artificial Intelligence Research Institute
+language:
+  - Chinese
+paper/news: https://arxiv.org/abs/2110.04725
+parameters_dense:
+  - 13B
+  - 245B
+api: https://air.inspur.com/home

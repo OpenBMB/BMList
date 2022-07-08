@@ -1,0 +1,12 @@
+name: EVA
+release_date: 2021-08
+affiliation:
+  - Tsinghua University
+  - BAAI
+language:
+  - Chinese
+paper/news: https://arxiv.org/abs/2108.01547
+parameters_dense:
+  - 2.8B
+model: https://wudaoai.cn/model/detail/EVA#download
+code: https://github.com/thu-coai/EVA/

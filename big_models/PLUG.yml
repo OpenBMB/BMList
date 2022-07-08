@@ -1,0 +1,9 @@
+name: PLUG
+release_date: 2021-04
+affiliation:
+  - Alibaba
+language:
+  - Chinese
+paper/news: https://www.infoq.cn/article/efiho75sqsvqlvftruke
+parameters_dense:
+  - 27B

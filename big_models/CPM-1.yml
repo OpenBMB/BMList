@@ -1,0 +1,12 @@
+name: CPM-1
+release_date: 2020-12
+affiliation:
+  - Tsinghua University
+  - BAAI
+language:
+  - Chinese
+paper/news: https://arxiv.org/abs/2012.00413
+parameters_dense:
+  - 2.6B
+model: https://github.com/OpenBMB/ModelCenter#supported-models
+code: https://github.com/OpenBMB/ModelCenter

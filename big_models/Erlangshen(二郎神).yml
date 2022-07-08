@@ -1,0 +1,11 @@
+name: Erlangshen(二郎神)
+release_date: 2021-11
+affiliation:
+  - IDEA
+language:
+  - Chinese
+paper/news: https://idea.edu.cn/fengshenbang-lm.html
+parameters_dense:
+  - 1.3B
+model: https://huggingface.co/IDEA-CCNL/Erlangshen-MegatronBert-1.3B
+code: https://github.com/IDEA-CCNL/Fengshenbang-LM/tree/main/fengshen/examples/pretrain_erlangshen

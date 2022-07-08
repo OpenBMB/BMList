@@ -1,0 +1,12 @@
+name: 'XLM-R '
+release_date: 2021-05
+affiliation:
+  - Facebook
+language:
+  - Multilingual
+paper/news: https://arxiv.org/abs/2105.00572
+parameters_dense:
+  - 3.5B
+  - 10.7B
+model: https://github.com/facebookresearch/fairseq/tree/main/examples/xlmr#pre-trained-models
+code: https://github.com/facebookresearch/fairseq/tree/main/examples/xlmr

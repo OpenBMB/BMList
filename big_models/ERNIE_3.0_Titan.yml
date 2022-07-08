@@ -1,0 +1,10 @@
+name: 'ERNIE 3.0 Titan '
+release_date: 2021-12
+affiliation:
+  - Peng Cheng Laboratory
+  - Baidu
+language:
+  - Chinese
+paper/news: https://arxiv.org/abs/2112.12731
+parameters_dense:
+  - 260B

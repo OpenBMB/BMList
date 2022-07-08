@@ -1,0 +1,10 @@
+name: ERNIE 3.0 Zeus
+release_date: 2022-05
+affiliation:
+  - Baidu
+language:
+  - Chinese
+paper/news: https://baijiahao.baidu.com/s?id=1733603775259242015&wfr=spider&for=pc
+parameters_dense:
+  - ~100B
+api: https://wenxin.baidu.com/younger/apiDetail?id=20006

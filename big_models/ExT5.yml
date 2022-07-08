@@ -1,0 +1,10 @@
+name: ExT5
+release_date: 2021-11
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/2111.10952
+parameters_dense:
+  - 3B
+  - 11B

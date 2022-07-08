@@ -1,0 +1,11 @@
+name: LaMDA
+release_date: 2022-01
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/2201.08239
+parameters_dense:
+  - 2B
+  - 8B
+  - 137B

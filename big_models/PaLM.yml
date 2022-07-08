@@ -1,0 +1,11 @@
+name: PaLM
+release_date: 2022-04
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/2204.02311
+parameters_dense:
+  - 8B
+  - 62B
+  - 540B

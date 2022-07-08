@@ -1,0 +1,11 @@
+name: PLATO-XL
+release_date: 2021-09
+affiliation:
+  - Baidu
+language:
+  - English
+paper/news: https://arxiv.org/abs/2109.09519
+parameters_dense:
+  - 11B
+model: https://github.com/PaddlePaddle/Knover/blob/develop/projects/PLATO-XL/README.md#pre-trained-dialogue-generation-model
+code: https://github.com/PaddlePaddle/Knover/

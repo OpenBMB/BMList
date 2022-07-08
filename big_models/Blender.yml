@@ -1,0 +1,12 @@
+name: Blender
+release_date: 2020-04
+affiliation:
+  - Facebook
+language:
+  - English
+paper/news: https://arxiv.org/abs/2004.13637
+parameters_dense:
+  - 2.7B
+  - 9.4B
+model: https://parl.ai/projects/recipes/
+code: https://parl.ai/projects/recipes/

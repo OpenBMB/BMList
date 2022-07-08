@@ -1,0 +1,10 @@
+name: Benetnasch(瑶光)
+release_date: 2022-03
+affiliation:
+  - Singularity AI
+language:
+  - Chinese
+paper/news: https://vr.sina.com.cn/2022-03-28/doc-imcwiwss8619202.shtml
+parameters_dense:
+  - ~10B
+api: https://openapi.singularity-ai.com/index.html#/

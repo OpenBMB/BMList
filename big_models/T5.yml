@@ -1,0 +1,12 @@
+name: T5
+release_date: 2019-10
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/1910.10683
+parameters_dense:
+  - 3B
+  - 11B
+model: https://github.com/google-research/text-to-text-transfer-transformer#released-model-checkpoints
+code: https://github.com/google-research/text-to-text-transfer-transformer

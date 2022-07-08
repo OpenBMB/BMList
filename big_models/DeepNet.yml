@@ -1,0 +1,10 @@
+name: DeepNet
+release_date: 2022-03
+affiliation:
+  - Microsoft
+language:
+  - English
+paper/news: https://arxiv.org/abs/2203.00555
+parameters_dense:
+  - 3.2B
+code: https://arxiv.org/pdf/2203.00555.pdf

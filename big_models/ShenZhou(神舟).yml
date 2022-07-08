@@ -1,0 +1,9 @@
+name: ShenZhou(神舟)
+release_date: 2021-09
+affiliation:
+  - Tencent
+language:
+  - Chinese
+paper/news: https://mp.weixin.qq.com/s/PODShmOo0tg9cmchNhzvtw
+parameters_dense:
+  - ~10B

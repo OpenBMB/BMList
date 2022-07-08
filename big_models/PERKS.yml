@@ -1,0 +1,9 @@
+name: PERKS
+release_date: 2021-11
+affiliation:
+  - Kuaishou
+language:
+  - Chinese
+paper/news: https://github.com/KuaiSearchPERKS/PERKS/
+parameters_dense:
+  - ~1B

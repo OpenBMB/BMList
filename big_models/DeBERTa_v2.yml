@@ -1,0 +1,11 @@
+name: DeBERTa v2
+release_date: 2020-06
+affiliation:
+  - Microsoft
+language:
+  - English
+paper/news: https://arxiv.org/abs/2006.03654
+parameters_dense:
+  - 1.5B
+model: https://huggingface.co/microsoft/deberta-v2-xxlarge
+code: https://github.com/microsoft/DeBERTa

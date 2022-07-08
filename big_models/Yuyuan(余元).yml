@@ -1,0 +1,11 @@
+name: Yuyuan(余元)
+release_date: 2021-11
+affiliation:
+  - IDEA
+language:
+  - Chinese
+paper/news: https://idea.edu.cn/fengshenbang-lm.html
+parameters_dense:
+  - 3.5B
+model: https://huggingface.co/IDEA-CCNL/YuyuanQA-GPT2-3.5B
+code: https://github.com/IDEA-CCNL/Fengshenbang-LM/tree/main/fengshen/examples/wenzhong_qa

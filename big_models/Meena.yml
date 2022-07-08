@@ -1,0 +1,9 @@
+name: Meena
+release_date: 2020-01
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/2001.09977
+parameters_dense:
+  - 2.6B

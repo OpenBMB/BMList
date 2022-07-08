@@ -1,0 +1,11 @@
+name: LongT5
+release_date: 2021-12
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/2112.07916
+parameters_dense:
+  - 3B
+model: https://github.com/google-research/longt5#released-model-checkpoints
+code: https://github.com/google-research/longt5

@@ -1,0 +1,14 @@
+name: Switch Transformers
+release_date: 2021-01
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/2101.03961
+parameters_MoE:
+  - 7B
+  - 26B
+  - 395B
+  - 1571B
+model: https://github.com/google-research/t5x/blob/main/docs/models.md#mixture-of-experts-moe-checkpoints
+code: https://github.com/google-research/t5x

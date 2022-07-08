@@ -1,0 +1,11 @@
+name: GPT-2
+release_date: 2019-02
+affiliation:
+  - OpenAI
+language:
+  - English
+paper/news: https://cdn.openai.com/better-language-models/language_models_are_unsupervised_multitask_learners.pdf
+parameters_dense:
+  - 1.5B
+model: https://github.com/openai/gpt-2
+code: https://github.com/openai/gpt-2

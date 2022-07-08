@@ -1,0 +1,15 @@
+name: GLM
+release_date: 2021-03
+affiliation:
+  - Tsinghua University
+  - BAAI
+  - MIT
+  - Shanghai Qi Zhi Institute
+language:
+  - English
+  - Chinese
+paper/news: https://arxiv.org/abs/2103.10360
+parameters_dense:
+  - 10B
+model: https://github.com/THUDM/GLM#pretrained-models
+code: https://github.com/THUDM/GLM

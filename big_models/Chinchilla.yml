@@ -1,0 +1,9 @@
+name: Chinchilla
+release_date: 2022-03
+affiliation:
+  - DeepMind
+language:
+  - English
+paper/news: https://arxiv.org/abs/2203.15556
+parameters_dense:
+  - 70B

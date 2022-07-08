@@ -1,0 +1,11 @@
+name: GPT-J
+release_date: 2021-05
+affiliation:
+  - EleutherAI
+language:
+  - English
+paper/news: /
+parameters_dense:
+  - 6B
+model: https://github.com/kingoflolz/mesh-transformer-jax/#links
+code: https://github.com/kingoflolz/mesh-transformer-jax/

@@ -1,0 +1,15 @@
+name: T5-Efficient
+release_date: 2021-09
+affiliation:
+  - Google
+  - DeepMind
+language:
+  - English
+paper/news: https://arxiv.org/abs/2109.10686
+parameters_dense:
+  - 3B
+  - 11B
+  - 30B
+model: https://github.com/google-research/google-research/tree/master/scaling_transformers#download-checkpoints
+code: https://github.com/google-research/text-to-text-transfer-transformer
+api: '/ '

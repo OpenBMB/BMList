@@ -1,0 +1,9 @@
+name: ERNIE 3
+release_date: 2021-07
+affiliation:
+  - Baidu
+language:
+  - Chinese
+paper/news: https://arxiv.org/abs/2107.02137
+parameters_dense:
+  - 10B

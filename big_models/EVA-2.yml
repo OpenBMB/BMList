@@ -1,0 +1,13 @@
+name: EVA-2
+release_date: 2022-03
+affiliation:
+  - Tsinghua University
+  - BAAI
+  - York University
+language:
+  - Chinese
+paper/news: https://arxiv.org/abs/2203.09313
+parameters_dense:
+  - 2.8B
+model: https://wudaoai.cn/model/detail/EVA#download
+code: https://github.com/thu-coai/EVA/

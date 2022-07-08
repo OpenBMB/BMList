@@ -1,0 +1,11 @@
+name: GPT-NeoX
+release_date: 2022-04
+affiliation:
+  - EleutherAI
+language:
+  - English
+paper/news: https://arxiv.org/abs/2204.06745
+parameters_dense:
+  - 20B
+model: https://github.com/EleutherAI/gpt-neox#download-links
+code: https://github.com/EleutherAI/gpt-neox

@@ -1,0 +1,10 @@
+name: 'Retro '
+release_date: 2021-12
+affiliation:
+  - DeepMind
+language:
+  - English
+paper/news: https://arxiv.org/abs/2112.04426
+parameters_dense:
+  - 1.5B
+  - 7.5B

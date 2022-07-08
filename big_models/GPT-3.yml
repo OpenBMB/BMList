@@ -1,0 +1,14 @@
+name: GPT-3
+release_date: 2020-05
+affiliation:
+  - OpenAI
+language:
+  - English
+paper/news: https://arxiv.org/abs/2005.14165
+parameters_dense:
+  - 1.3B
+  - 2.7B
+  - 6.7B
+  - 13B
+  - 175B
+api: https://openai.com/api/

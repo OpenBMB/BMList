@@ -1,0 +1,9 @@
+name: TI-NLP
+release_date: 2021-10
+affiliation:
+  - Tencent
+language:
+  - Chinese
+paper/news: https://www.iheima.com/article-325531.html
+parameters_dense:
+  - ~10B

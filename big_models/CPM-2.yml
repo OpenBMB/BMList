@@ -1,0 +1,14 @@
+name: CPM-2
+release_date: 2021-06
+affiliation:
+  - Tsinghua University
+  - BAAI
+language:
+  - Chinese
+paper/news: https://arxiv.org/abs/2106.10715
+parameters_dense:
+  - 11B
+parameters_MoE:
+  - 198B
+model: https://github.com/OpenBMB/ModelCenter#supported-models
+code: https://github.com/OpenBMB/ModelCenter

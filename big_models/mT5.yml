@@ -1,0 +1,13 @@
+name: mT5
+release_date: 2020-10
+affiliation:
+  - Google
+language:
+  - Multilingual
+paper/news: https://arxiv.org/abs/2010.11934
+parameters_dense:
+  - 1.2B
+  - 3.7B
+  - 13B
+model: https://github.com/google-research/multilingual-t5#released-model-checkpoints
+code: https://github.com/google-research/multilingual-t5

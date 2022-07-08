@@ -1,0 +1,15 @@
+name: PanGu(盘古)-α
+release_date: 2021-04
+affiliation:
+  - Peng Cheng Laboratory
+  - Huawei
+language:
+  - Chinese
+paper/news: https://arxiv.org/abs/2104.12369
+parameters_dense:
+  - 2.6B
+  - 13B
+  - 200B
+model: https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/PanGu-%CE%B1#%E6%A8%A1%E5%9E%8B%E4%B8%8B%E8%BD%BD
+code: https://github.com/huawei-noah/Pretrained-Language-Model/tree/master/PanGu-%CE%B1
+api: https://pangu-alpha.openi.org.cn/
