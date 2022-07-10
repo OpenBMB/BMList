@@ -72,8 +72,6 @@ def plot_scatter(model_list):
         for variant in ['dense', 'MoE']:
             if 'parameters_{}'.format(variant) in model:
                 lang = get_lang(model['language'])
-                if model['release_date'] < first_date:
-                    first_date = model['release_date']
                 dates[lang].append(model['release_date'])
 
                 param_list = sorted(list(map(lambda x: float(x.split('~')[-1].split('B')[0]), model['parameters_{}'.format(variant)])))
