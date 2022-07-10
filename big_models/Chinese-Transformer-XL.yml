@@ -1,10 +1,9 @@
 name: Chinese-Transformer-XL
-release_date: 2021-03
+release_date: 2021/03/17
 affiliation:
   - Tsinghua University
 language:
   - Chinese
-paper/news: https://github.com/THUDM/Chinese-Transformer-XL
 parameters_dense:
   - 2.9B
 model: http://dorc-model-team.ks3-cn-beijing.ksyun.com/ren-zhi/my-model/mp_rank_00_model_states.pt

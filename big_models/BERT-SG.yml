@@ -1,9 +1,0 @@
-name: BERT-SG
-release_date: 2021-05
-affiliation:
-  - Sogou
-language:
-  - Chinese
-paper/news: https://tech.chinadaily.com.cn/a/202105/31/WS60b49402a3101e7ce97528e6.html
-parameters_dense:
-  - Unknown

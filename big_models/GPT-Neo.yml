@@ -1,10 +1,9 @@
 name: GPT-Neo
-release_date: 2021-03
+release_date: 2021/03/21
 affiliation:
   - EleutherAI
 language:
   - English
-paper/news: /
 parameters_dense:
   - 1.3B
   - 2.7B
