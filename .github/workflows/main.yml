@@ -34,6 +34,7 @@ jobs:
           echo "-------- install requirements --------"
           pip install matplotlib==3.5.2
           pip install seaborn==0.11.2
+          pip install pyyaml=6.0
           echo "-------- start processing --------"
           python3 main.py
           
