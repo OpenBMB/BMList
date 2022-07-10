@@ -37,4 +37,7 @@ jobs:
           pip install pyyaml==6.0
           echo "-------- start processing --------"
           python3 main.py
+          git add scatter_plot.png
+          git commit -m "update scatter plot"
+          git push -u origin main
           
