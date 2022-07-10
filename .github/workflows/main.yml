@@ -25,10 +25,8 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
-      - name: Setup Python
       - uses: actions/setup-python@v4.0.0
         with:
-          # Version range or exact version of Python to use, using SemVer's version range syntax. Reads from .python-version if unset.
           python-version: 3.8
         
       - name: process
