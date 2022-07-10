@@ -39,7 +39,7 @@ jobs:
           python3 main.py
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git add -u
+          git add .
           git commit -m "update scatter plot"
           git push -u origin main
           
