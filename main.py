@@ -134,7 +134,7 @@ def plot_bar(model_list):
     plt.bar(x, y_cnt, width=0.4, alpha=0.8, color='blue')
     plt.xticks(rotation=90)
     # plt.xlabel('Affiliation')
-    plt.ylabel('# Model')
+    plt.ylabel('# Models')
     plt.savefig('figures/bar_cnt.png', dpi=fig_cnt.dpi, bbox_inches='tight')
 
     fig_params = plt.figure(dpi=300, figsize=(12, 6))
