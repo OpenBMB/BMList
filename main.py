@@ -63,7 +63,7 @@ def get_lang(language):
 
 def plot_scatter(model_list):
     """
-    Draw scatter diagram.
+    Draw scatter diagram according to the number of parameters.
     """
 
     fig = plt.figure(dpi=300, figsize=(12, 6))
@@ -103,7 +103,49 @@ def plot_scatter(model_list):
     plt.xlabel('Date')
     plt.ylabel('Billion Parameters')
     
-    plt.savefig('figures/scatter_plot.png', dpi=fig.dpi, bbox_inches='tight')
+    plt.savefig('figures/scatter.png', dpi=fig.dpi, bbox_inches='tight')
+
+def plot_bar(model_list):
+    """
+    Draw bar chart w.r.t affiliations.
+    """
+    
+    model_cnt = defaultdict(int)
+    model_params = defaultdict(int)
+
+    for model in model_list:
+        affiliation_list = model['affiliation']
+        for affiliation in affiliation_list:
+            if affiliation == 'Facebook' or affiliation == 'Meta':
+                affiliation = 'Meta(Facebook)'
+
+            model_cnt[affiliation] += 1
+
+            param_list = list()
+            if 'parameters_MoE' in model:
+                param_list += model['parameters_MoE']
+            if 'parameters_dense' in model:
+                param_list += model['parameters_dense']    
+            param_list = sorted(list(map(lambda x: float(x.split('~')[-1].split('B')[0]), param_list)))
+            model_params[affiliation] += param_list[-1] # only count the largest model
+    
+    x, y_cnt = list(zip(*sorted(model_cnt.items(), key=lambda x:x[1], reverse=True)))
+    fig_cnt = plt.figure(dpi=300, figsize=(12, 6))
+    plt.bar(x, y_cnt, width=0.4, alpha=0.8, color='blue')
+    plt.xticks(rotation=90)
+    plt.xlabel('Affiliation')
+    plt.ylabel('# Model')
+    plt.savefig('figures/bar_cnt.png', dpi=fig_cnt.dpi, bbox_inches='tight')
+
+    fig_params = plt.figure(dpi=300, figsize=(12, 6))
+    x, y_params = list(zip(*sorted(model_params.items(), key=lambda x:x[1], reverse=True)))
+    plt.bar(x, y_params, width=0.4, alpha=0.8, color='blue')
+    plt.yscale('log', base=2)
+    plt.xticks(rotation=90)
+    plt.xlabel('Affiliation')
+    plt.ylabel('Billion Parameters')
+    plt.savefig('figures/bar_params.png', dpi=fig_params.dpi, bbox_inches='tight')
+
 
 if __name__ == "__main__":
     main_path = './big_models'
@@ -115,3 +157,5 @@ if __name__ == "__main__":
     if not os.path.exists('figures'):
         os.mkdir('figures')
     plot_scatter(model_list)
+    plot_bar(model_list)
+
