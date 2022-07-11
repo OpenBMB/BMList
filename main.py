@@ -100,7 +100,7 @@ def plot_scatter(model_list):
     plt.tight_layout()
     plt.gca().xaxis.set_major_locator(mdates.AutoDateLocator(minticks=12, maxticks=20))
     plt.margins(y=0.2)
-    plt.xlabel('Date')
+    # plt.xlabel('Date')
     plt.ylabel('Billion Parameters')
     
     plt.savefig('figures/scatter.png', dpi=fig.dpi, bbox_inches='tight')
@@ -133,7 +133,7 @@ def plot_bar(model_list):
     fig_cnt = plt.figure(dpi=300, figsize=(12, 6))
     plt.bar(x, y_cnt, width=0.4, alpha=0.8, color='blue')
     plt.xticks(rotation=90)
-    plt.xlabel('Affiliation')
+    # plt.xlabel('Affiliation')
     plt.ylabel('# Model')
     plt.savefig('figures/bar_cnt.png', dpi=fig_cnt.dpi, bbox_inches='tight')
 
@@ -142,7 +142,7 @@ def plot_bar(model_list):
     plt.bar(x, y_params, width=0.4, alpha=0.8, color='blue')
     plt.yscale('log', base=2)
     plt.xticks(rotation=90)
-    plt.xlabel('Affiliation')
+    # plt.xlabel('Affiliation')
     plt.ylabel('Billion Parameters')
     plt.savefig('figures/bar_params.png', dpi=fig_params.dpi, bbox_inches='tight')
 
