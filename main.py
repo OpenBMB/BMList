@@ -2,6 +2,7 @@ import yaml
 import json
 import os
 import matplotlib.pyplot as plt
+from matplotlib import font_manager
 import seaborn as sns
 from collections import defaultdict
 from datetime import datetime
@@ -9,7 +10,11 @@ import matplotlib.dates as mdates
 import math
 
 sns.set_style('darkgrid')
-plt.rcParams['font.sans-serif'] = ['Arial Unicode MS']
+font_path = 'font/SourceHanSansCN-Regular.otf'
+font_manager.fontManager.addfont(font_path)
+prop = font_manager.FontProperties(fname=font_path)
+plt.rcParams['font.family'] = 'sans-serif'
+plt.rcParams['font.sans-serif'] = prop.get_name()
 plt.rcParams["axes.unicode_minus"] = False
 plt.rcParams['date.converter'] = 'concise'
 
@@ -91,8 +96,8 @@ def plot_scatter(model_list):
     plt.ylim(-100, 2000)
     plt.gca().xaxis.set_major_locator(mdates.AutoDateLocator(minticks=12, maxticks=20))
     plt.xlabel('Date')
-    plt.ylabel('Parameters(B)')
-    plt.savefig('scatter_plot.png', dpi=fig.dpi)
+    plt.ylabel('Parameters (B)')
+    plt.savefig('figures/scatter_plot.png', dpi=fig.dpi, bbox_inches='tight')
 
 if __name__ == "__main__":
     main_path = './big_models'
