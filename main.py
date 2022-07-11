@@ -81,25 +81,28 @@ def plot_scatter(model_list):
 
                 param_list = sorted(list(map(lambda x: float(x.split('~')[-1].split('B')[0]), model['parameters_{}'.format(variant)])))
                 parameters[lang].append(param_list[-1])
-                names[lang].append(model['name'] + ('(MoE)' if variant == 'MoE' else '') if parameters[lang][-1] >= 100 else '')
-                
+                names[lang].append(model['name'] + ('(MoE)' if variant == 'MoE' else '') if param_list[-1] >= 20 else '')
+
     for lang in  dates.keys():
         x = list(map(lambda x: datetime.strptime(x, "%Y/%m/%d"), dates[lang]))
-        plt.scatter(x, parameters[lang], s=list(map(lambda x: x + 10, parameters[lang])), c=color_map[lang], marker='o', alpha=0.7, label=lang)
-    
+        y = parameters[lang]
+
+        plt.scatter(x, y, s=list(map(lambda x: x + 10, y)), c=color_map[lang], marker='o', alpha=0.7, label=lang)
+
         for i, label in enumerate(names[lang]):
-            plt.text(x[i], parameters[lang][i], label, rotation=30, fontsize=7)
+            plt.text(x[i], y[i], label, rotation=30, fontsize=6)
     
-    legend = plt.legend(loc='upper right')
+    legend = plt.legend(loc='upper left')
     for handle in legend.legendHandles:
-        handle.set_sizes([15.0])
-    plt.ylim(-100, 2000)
-    plt.gca().xaxis.set_major_locator(mdates.AutoDateLocator(minticks=12, maxticks=20))
-    plt.xlabel('Date')
-    plt.ylabel('Parameters (B)')
+        handle.set_sizes([10.0])
     
-    if not os.path.exists('figures'):
-        os.mkdir('figures')
+    plt.yscale('log', base=2)
+    plt.tight_layout()
+    plt.gca().xaxis.set_major_locator(mdates.AutoDateLocator(minticks=12, maxticks=20))
+    plt.margins(y=0.2)
+    plt.xlabel('Date')
+    plt.ylabel('Billion Parameters')
+    
     plt.savefig('figures/scatter_plot.png', dpi=fig.dpi, bbox_inches='tight')
 
 if __name__ == "__main__":
@@ -109,4 +112,6 @@ if __name__ == "__main__":
     output_file = 'all_models.jsonl'
     write_to_jsonl(model_list, output_file)
 
+    if not os.path.exists('figures'):
+        os.mkdir('figures')
     plot_scatter(model_list)

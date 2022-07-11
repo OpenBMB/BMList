@@ -12,4 +12,3 @@ parameters_dense:
   - 30B
 model: https://github.com/google-research/google-research/tree/master/scaling_transformers#download-checkpoints
 code: https://github.com/google-research/text-to-text-transfer-transformer
-api: '/ '
