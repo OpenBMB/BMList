@@ -97,6 +97,9 @@ def plot_scatter(model_list):
     plt.gca().xaxis.set_major_locator(mdates.AutoDateLocator(minticks=12, maxticks=20))
     plt.xlabel('Date')
     plt.ylabel('Parameters (B)')
+    
+    if not os.path.exists('figures'):
+        os.mkdir('figures')
     plt.savefig('figures/scatter_plot.png', dpi=fig.dpi, bbox_inches='tight')
 
 if __name__ == "__main__":
