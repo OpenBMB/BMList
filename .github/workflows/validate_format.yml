@@ -27,6 +27,7 @@ jobs:
       - name: jsonschema
         run: |
           echo "-------- install requirements --------"
+          pip install pyyaml==6.0
           pip install jsonschema[format_nongpl]
           echo "-------- start validating format --------"
           python3 validate_yml_format.py
