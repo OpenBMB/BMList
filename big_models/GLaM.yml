@@ -10,7 +10,7 @@ parameters_dense:
   - 8.7B
   - 137B
 parameters_MoE:
-  - '1.9'
+  - 1.9B
   - 20B
   - 27B
   - 53B

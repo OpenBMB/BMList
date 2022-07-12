@@ -1,0 +1,33 @@
+name: "Validate Format"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: yaml-lint
+        uses: ibiqlik/action-yamllint@v3
+        with:
+          file_or_dir: big_models/
+          config_file: .yamllint
+
+      - name: jsonschema
+        uses: actions/setup-python@v4.0.0
+        with:
+          python-version: 3.8
+        run: |
+          echo "-------- install requirements --------"
+          pip install jsonschema[format_nongpl]
+          echo "-------- start validating format --------"
+          python3 validate_yml_format.py
+          echo "-------- format validation done --------"
