@@ -14,6 +14,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4.0.0
+        with:
+          python-version: 3.8
 
       - name: yaml-lint
         uses: ibiqlik/action-yamllint@v3
@@ -22,9 +25,6 @@ jobs:
           config_file: .yamllint
 
       - name: jsonschema
-        uses: actions/setup-python@v4.0.0
-        with:
-          python-version: 3.8
         run: |
           echo "-------- install requirements --------"
           pip install jsonschema[format_nongpl]
