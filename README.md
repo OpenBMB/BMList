@@ -2,7 +2,7 @@
 
 <h1>BMList</h1>
 
-**A List for Big Models**
+**A List of Big Models**
 
 </div>
 
