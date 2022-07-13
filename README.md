@@ -88,5 +88,5 @@ Note that ``name``, ``release_date``, ``affiliation`` and ``language`` are requi
 ## Contributors
 
 <a href="https://github.com/OpenBMB/BMList/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=OpenBMB/BMTrain" />
+  <img src="https://contrib.rocks/image?repo=OpenBMB/BMList" />
 </a> 
