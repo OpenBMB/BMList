@@ -12,21 +12,21 @@ Welcome to BMList! We wish to use this list to show the recent trend of big mode
 
 In BMList, we list models that:
 
-1. Have more than 1 billion parameters;
+1. Have at least 1 billion parameters;
 2. Have been publicly released either by a paper, an artice or a piece of news;
 3. Focus on text processing (we promise other models like vision or code models are coming soon!).
 
-Note that some info we listed may not be accurate. If there are any typos or mistakes, please feel free to raise issues or pull requests!
+If you find any typos or mistakes in this repo, please feel free to raise issues or pull requests!
 
 
 # Demos
 
-We found it is limited to show all information of big models in the GitHub repo. So that we use this repo to store raw information and provide two ways to get more info about big models.
+We find that it is limited to showing all information of big models in a GitHub repo. So we use this repo to store raw data and provide two ways to present more information.
 
 
 ## Multi-dimensional Table
 
-We show big models in a [multidimensional table](https://a0qwpgc3qv.feishu.cn/base/bascn2lp9dYCNe6GKdRd5sfPwhd), which is easy to show more info and classify models by organizations/languages.
+We show all information of big models in a [multi-dimensional table](https://a0qwpgc3qv.feishu.cn/base/bascn2lp9dYCNe6GKdRd5sfPwhd), which is easy to classify models by organizations/languages.
 
 ## Big Model Gallery
 
@@ -51,38 +51,9 @@ Now the figures are limited, and we welcome ideas for new figures.
 
 # Contribution
 
-We welcome everyone to provide new models. To add a new model, the only thing you need is to add a new yaml file in the ``big_models`` folder. Once you uploaded the model, we will update the multi-dimensional table and the website. Don't worry about that!
+We welcome everyone to add new models. Please check our [contributing guidelines](https://github.com/OpenBMB/BMList/blob/master/CONTRIBUTING.md) to see how to contribute.
 
-Here are steps to add a model:
-
-1. Create a yaml file with the name ``English_Model_Name(中文模型名称，如果有).yml``. An example is ``BigModel(大模型).yml``
-
-2. Add the model info in the file. You can read ``format.json`` to know the format of the yaml file. An example is:
-
-```
-name: BigModel(大模型)
-release_date: 2022/01/01
-affiliation:
-  - OpenBMB
-  - ModelBest
-language:
-  - English
-  - Chinese
-paper/news: https://the-link-to-the-paper-or-news
-parameters_dense:
-  - 1B
-  - 10B
-parameters_MoE:
-  - 100B
-  - 1000B
-model: https://the-link-to-the-model
-code: https://the-link-to-the-code
-api: https://the-link-to-the-api
-```
-
-Note that ``name``, ``release_date``, ``affiliation`` and ``language`` are required and either ``parameters_dense`` or ``parameters_MoE`` is required.
-
-3. Propose a pull request!
+Once you added a model, the multi-dimensional table and the website will be updated. Don't worry about that!
 
 
 ## Contributors
