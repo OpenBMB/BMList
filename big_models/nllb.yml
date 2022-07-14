@@ -4,7 +4,7 @@ affiliation:
   - Meta
 language:
   - Multilingual
-paper/news: https://research.facebook.com/publications/no-language-left-behind/ 
+paper/news: https://research.facebook.com/publications/no-language-left-behind/
 parameters_dense:
   - 1.2B
   - 3.3B
