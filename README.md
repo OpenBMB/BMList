@@ -21,7 +21,7 @@ If you find any typos or mistakes in this repo, please feel free to raise issues
 
 # Demos
 
-We find that it is limited to showing all information of big models in a GitHub repo. So we use this repo to store raw data and provide two ways to present more information.
+We find that it is not intuitive to show all information about big models in a GitHub repo. So we use this repo to store raw data and provide two ways to present more information.
 
 
 ## Multi-dimensional Table
@@ -32,7 +32,7 @@ We show all information of big models in a [multi-dimensional table](https://a0q
 
 We publish a [website]() to show statistics of big models. 
 
-Now the figures are limited, and we welcome ideas for new figures.
+Now we present three figures for interested users, and we welcome ideas for new figures.
 
 
 ### Big Model Trend

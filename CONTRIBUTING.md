@@ -22,23 +22,36 @@ $ git remote add upstream https://github.com/OpenBMB/BMList.git
 * Add the model information in the file. An example is:
 
 ```
+# If the model does not have a Chinese name, just write like "BigModel"
 name: BigModel(大模型)
+
+# the date should be in the 20XX/XX/XX format
 release_date: 2022/01/01
+
+# At least one affiliation should be added
 affiliation:
   - OpenBMB
   - ModelBest
+
+# Now you can choose English/Chinese/Multilingual
 language:
   - English
   - Chinese
+
 paper/news: https://the-link-to-the-paper-or-news
+
 parameters_dense:
   - 1B
   - 10B
+
 parameters_MoE:
   - 100B
   - 1000B
+
 model: https://the-link-to-the-model
+
 code: https://the-link-to-the-code
+
 api: https://the-link-to-the-api
 ```
 
@@ -46,9 +59,11 @@ Here are some notes:
 
 * ``name``, ``release_date``, ``affiliation`` and ``language`` are required.
 
-* If the model supports many languages, the ``language`` can be "multilingual".
+* If the model supports multiple languages, the ``language`` can be "Multilingual".
 
-* You need to determine whether the model is a dense or MoE (Mixture of Experts) architecture, or even both, and fill in the number of parameters into ``parameters_dense`` or/and ``parameters_MoE``.
+* You need to determine whether the model is dense or MoE-based (Mixture of Experts), or even both, and fill in the number of parameters into ``parameters_dense`` or/and ``parameters_MoE``.
+
+* For advanced users, you can refer to the ``format.json`` file to learn more about the yaml file format. 
 
 
 ## 3. Make a pull request
