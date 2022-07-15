@@ -1,0 +1,14 @@
+name: BLOOM
+release_date: 2022/07/12
+affiliation:
+  - BigScience
+language:
+  - Multilingual
+paper/news: https://bigscience.huggingface.co/blog/bloom
+parameters_dense:
+  - 1.3B
+  - 2.5B
+  - 6.3B
+  - 175B
+model: https://huggingface.co/bigscience/bloom/tree/main
+code: https://github.com/huggingface/transformers/tree/main/src/transformers/models/bloom
