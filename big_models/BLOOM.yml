@@ -4,7 +4,7 @@ affiliation:
   - BigScience
 language:
   - Multilingual
-paper/news: https://bigscience.huggingface.co/
+paper/news: https://bigscience.huggingface.co/blog/bloom
 parameters_dense:
   - 1.3B
   - 2.5B
