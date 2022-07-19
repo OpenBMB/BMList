@@ -1,3 +1,4 @@
+from textwrap import indent
 import yaml
 import json
 import os
@@ -37,13 +38,12 @@ def get_model_list(main_path):
     return model_list
 
 
-def write_to_jsonl(model_list, output_file):
+def write_to_json(model_list, output_file):
     """
-    Write the model_list to a jsonl file.
+    Write the model_list to a json file.
     """
     f = open(output_file, "w")
-    for model in model_list:
-        f.write(json.dumps(model, ensure_ascii=False) + "\n")
+    f.write(json.dumps(model_list, ensure_ascii=False, indent=4) + "\n")
     f.close()
     print("[DONE] Write to {}.".format(output_file))
 
@@ -187,8 +187,8 @@ if __name__ == "__main__":
     main_path = "./big_models"
     model_list = get_model_list(main_path)
 
-    output_file = "all_models.jsonl"
-    write_to_jsonl(model_list, output_file)
+    output_file = "all_models.json"
+    write_to_json(model_list, output_file)
 
     if not os.path.exists("figures"):
         os.mkdir("figures")
