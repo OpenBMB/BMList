@@ -6,6 +6,8 @@ affiliation:
 language:
   - Chinese
 paper/news: https://arxiv.org/abs/2104.12369
+domain:
+  - Text
 parameters_dense:
   - 2.6B
   - 13B

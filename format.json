@@ -20,6 +20,12 @@
                 "type": "string"
             }
         },
+        "domain": {
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
         "paper/news": {
             "type": "string"
         },
@@ -51,7 +57,8 @@
         "name",
         "release_date",
         "affiliation",
-        "language"
+        "paper/news",
+        "domain"
     ],
     "anyOf": [
         {
@@ -64,5 +71,32 @@
                 "parameters_MoE"
             ]
         }
-    ]
+    ],
+    "if": {
+        "properties": {
+            "domain": {
+                "contains": {
+                    "const": "Text"
+                }
+            }
+        }
+    },
+    "then": {
+        "required": [
+            "language"
+        ]
+    },
+    "else": {
+        "properties": {
+            "domain": {
+                "contains": {
+                    "anyOf": [
+                        {"const": "Vision"},
+                        {"const": "Audio"},
+                        {"const": "Code"}
+                    ]
+                }
+            }
+        }
+    }
 }

@@ -1,0 +1,15 @@
+name: Z-code M3
+release_date: 2021/09/22
+affiliation:
+  - Microsoft
+language:
+  - Multilingual
+paper/news: https://arxiv.org/abs/2109.10465
+domain:
+  - Text
+parameters_MoE:
+  - 1.8B
+  - 3B
+  - 5.5B
+  - 10B
+  - 20B

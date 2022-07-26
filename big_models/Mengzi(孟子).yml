@@ -9,6 +9,8 @@ affiliation:
 language:
   - Chinese
 paper/news: https://arxiv.org/abs/2110.06696
+domain:
+  - Text
 parameters_dense:
   - 1B
 code: https://github.com/Langboat/Mengzi

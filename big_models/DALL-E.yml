@@ -1,0 +1,13 @@
+name: DALL-E
+release_date: 2021/02/24
+affiliation:
+  - OpenAI
+language:
+  - English
+paper/news: https://arxiv.org/abs/2102.12092
+domain:
+  - Vision
+  - Text
+parameters_dense:
+  - 12B
+code: https://github.com/openai/dall-e

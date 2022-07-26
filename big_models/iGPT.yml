@@ -1,0 +1,10 @@
+name: iGPT
+release_date: 2020/06/17
+affiliation:
+  - OpenAI
+paper/news: https://proceedings.mlr.press/v119/chen20s.html
+domain:
+  - Vision
+parameters_dense:
+  - 1.3B
+  - 6.8B

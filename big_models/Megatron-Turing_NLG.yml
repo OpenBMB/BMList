@@ -2,9 +2,11 @@ name: Megatron-Turing NLG
 release_date: 2022/01/28
 affiliation:
   - Microsoft
-  - Nvidia
+  - NVIDIA
 language:
   - English
 paper/news: https://arxiv.org/abs/2201.11990
+domain:
+  - Text
 parameters_dense:
   - 530B

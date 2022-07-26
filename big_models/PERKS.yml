@@ -5,5 +5,7 @@ affiliation:
 language:
   - Chinese
 paper/news: https://github.com/KuaiSearchPERKS/PERKS/
+domain:
+  - Text
 parameters_dense:
   - ~1B

@@ -5,6 +5,8 @@ affiliation:
 language:
   - English
 paper/news: https://arxiv.org/abs/2205.05131
+domain:
+  - Text
 parameters_dense:
   - 20B
 model: https://github.com/google-research/google-research/tree/master/ul2#checkpoints

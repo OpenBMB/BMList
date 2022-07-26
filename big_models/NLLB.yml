@@ -5,6 +5,8 @@ affiliation:
 language:
   - Multilingual
 paper/news: https://research.facebook.com/publications/no-language-left-behind/
+domain:
+  - Text
 parameters_dense:
   - 1.2B
   - 3.3B

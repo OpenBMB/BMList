@@ -1,0 +1,17 @@
+name: HyperCLOVA
+release_date: 2021/09/10
+affiliation:
+  - NAVER
+  - Search Solutions
+language:
+  - Korean
+paper/news: https://arxiv.org/abs/2109.04650
+domain:
+  - Text
+parameters_dense:
+  - 1.3B
+  - 6.9B
+  - 13B
+  - 39B
+  - 82B
+  - 204B

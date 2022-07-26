@@ -1,0 +1,13 @@
+name: SEER
+release_date: 2022/02/16
+affiliation:
+  - Meta
+  - Inria
+paper/news: https://arxiv.org/abs/2202.08360
+domain:
+  - Vision
+parameters_dense:
+  - 1.5B
+  - 10B
+model: https://github.com/facebookresearch/vissl/tree/main/projects/SEER#pretrained-models-weights
+code: https://github.com/facebookresearch/vissl/tree/main/projects/SEER

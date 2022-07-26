@@ -5,5 +5,7 @@ affiliation:
 language:
   - Chinese
 paper/news: https://blog.51cto.com/u_15273780/5440502
+domain:
+  - Text
 parameters_dense:
   - ~1B

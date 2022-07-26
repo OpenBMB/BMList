@@ -1,0 +1,13 @@
+name: Minerva
+release_date: 2022/06/29
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/2206.14858
+domain:
+  - Text
+parameters_dense:
+  - 8B
+  - 62B
+  - 540B

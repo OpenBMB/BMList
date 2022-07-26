@@ -5,6 +5,8 @@ affiliation:
 language:
   - Chinese
 paper/news: https://idea.edu.cn/fengshenbang-lm.html
+domain:
+  - Text
 parameters_dense:
   - 1.1B
 model: https://huggingface.co/IDEA-CCNL/Bigan-Transformer-XL-denoise-1.1B

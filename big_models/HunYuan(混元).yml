@@ -5,5 +5,7 @@ affiliation:
 language:
   - Chinese
 paper/news: http://ex.chinadaily.com.cn/exchange/partners/82/rss/channel/cn/columns/snl9a7/stories/WS628df605a3101c3ee7ad730e.html
+domain:
+  - Text
 parameters_dense:
   - ~10B

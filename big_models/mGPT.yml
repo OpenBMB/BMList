@@ -1,0 +1,16 @@
+name: mGPT
+release_date: 2022/04/15
+affiliation:
+  - SberDevices
+  - HSE University
+  - AI Research Institute
+language:
+  - Multilingual
+paper/news: https://arxiv.org/abs/2204.07580
+domain:
+  - Text
+parameters_dense:
+  - 1.3B
+  - 13B
+model: https://huggingface.co/sberbank-ai/mGPT
+code: https://github.com/ai-forever/mgpt

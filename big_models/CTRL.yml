@@ -1,0 +1,13 @@
+name: CTRL
+release_date: 2019/09/11
+affiliation:
+  - Salesforce
+language:
+  - English
+paper/news: https://arxiv.org/abs/1909.05858
+domain:
+  - Text
+parameters_dense:
+  - 1.63B
+model: https://console.cloud.google.com/storage/browser/sf-ctrl;tab=objects?prefix=&forceOnObjectsSortingFiltering=false
+code: https://github.com/salesforce/ctrl

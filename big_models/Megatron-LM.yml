@@ -1,0 +1,15 @@
+name: Megatron-LM
+release_date: 2019/09/17
+affiliation:
+  - NVIDIA
+language:
+  - English
+paper/news: https://arxiv.org/abs/1909.08053
+domain:
+  - Text
+parameters_dense:
+  - 1.2B
+  - 2.5B
+  - 4.2B
+  - 8.3B
+code: https://github.com/NVIDIA/Megatron-LM

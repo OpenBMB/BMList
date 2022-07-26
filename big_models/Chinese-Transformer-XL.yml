@@ -4,6 +4,9 @@ affiliation:
   - Tsinghua University
 language:
   - Chinese
+paper/news: https://wudaoai.cn/model/detail/Transformer-XL
+domain:
+  - Text
 parameters_dense:
   - 2.9B
 model: http://dorc-model-team.ks3-cn-beijing.ksyun.com/ren-zhi/my-model/mp_rank_00_model_states.pt

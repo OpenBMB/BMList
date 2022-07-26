@@ -5,5 +5,7 @@ affiliation:
 language:
   - Chinese
 paper/news: https://www.infoq.cn/article/efiho75sqsvqlvftruke
+domain:
+  - Text
 parameters_dense:
   - 27B

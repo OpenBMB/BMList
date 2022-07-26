@@ -1,0 +1,11 @@
+name: METRO-LM
+release_date: 2022/04/13
+affiliation:
+  - Microsoft
+language:
+  - English
+paper/news: https://arxiv.org/abs/2204.06644
+domain:
+  - Text
+parameters_dense:
+  - 5.4B

@@ -6,9 +6,9 @@ affiliation:
   - UC Berkeley
   - TTIC
   - CMU
-language:
-  - English
 paper/news: https://arxiv.org/abs/2204.05999
+domain:
+  - Code
 parameters_dense:
   - 1.3B
   - 6.7B

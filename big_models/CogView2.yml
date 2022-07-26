@@ -1,0 +1,16 @@
+name: CogView2
+release_date: 2022/04/28
+affiliation:
+  - Tsinghua University
+  - BAAI
+language:
+  - English
+  - Chinese
+paper/news: https://arxiv.org/abs/2204.14217
+domain:
+  - Vision
+  - Text
+parameters_dense:
+  - 6B
+model: https://model.baai.ac.cn/model-detail/100041
+code: https://github.com/THUDM/CogView2

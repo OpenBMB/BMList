@@ -5,5 +5,7 @@ affiliation:
 language:
   - Chinese
 paper/news: https://www.iheima.com/article-325531.html
+domain:
+  - Text
 parameters_dense:
   - ~10B

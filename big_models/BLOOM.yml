@@ -5,6 +5,8 @@ affiliation:
 language:
   - Multilingual
 paper/news: https://bigscience.huggingface.co/blog/bloom
+domain:
+  - Text
 parameters_dense:
   - 1.3B
   - 2.5B

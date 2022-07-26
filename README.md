@@ -14,7 +14,7 @@ In BMList, we list models that:
 
 1. Have at least 1 billion parameters;
 2. Have been publicly released either by a paper, an artice or a piece of news;
-3. Focus on text processing (we promise other models like vision or code models are coming soon!).
+3. In one or more domains among text, vision, audio and code.
 
 If you find any typos or mistakes in this repo, please feel free to raise issues or pull requests!
 
@@ -41,13 +41,20 @@ Now we present three figures for interested users, and we welcome ideas for new 
 
 ### Model Numbers by Organizations
 
-<img src="figures/bar_cnt.png" width="1000px">
+<img src="figures/affiliation_cnt.png" width="1000px">
 
 ### Model Parameters by Organizations
 
-<img src="figures/bar_params.png" width="1000px">
+<img src="figures/affiliation_params.png" width="1000px">
 
-(In this figure we simply add up parameter sizes of each model published by each organization)
+### Model Numbers by Time
+
+<img src="figures/time_cnt.png" width="1000px">
+
+### Model Parameters by Time
+
+<img src="figures/time_params.png" width="1000px">
+
 
 # Contribution
 

@@ -1,0 +1,15 @@
+name: M-CTC-T
+release_date: 2021/10/30
+affiliation:
+  - Facebook
+  - McGill University
+  - Mila
+language:
+  - Multilingual
+paper/news: https://arxiv.org/abs/2111.00161
+domain:
+  - Audio
+parameters_dense:
+  - 1.06B
+model: https://github.com/flashlight/wav2letter/tree/main/recipes/mling_pl#inference
+code: https://github.com/flashlight/wav2letter/tree/main/recipes/mling_pl

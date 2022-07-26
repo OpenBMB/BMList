@@ -1,0 +1,13 @@
+name: Sparsely-Gate MOE
+release_date: 2017/01/23
+affiliation:
+  - Jagiellonian University
+  - Google
+language:
+  - Multilingual
+paper/news: https://arxiv.org/abs/1701.06538
+domain:
+  - Text
+parameters_MoE:
+  - 8.7B
+  - 137B

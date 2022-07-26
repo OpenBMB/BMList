@@ -5,5 +5,7 @@ affiliation:
 language:
   - Chinese
 paper/news: https://mp.weixin.qq.com/s/HQL0Hk49UR6kVNtrvcXEGA
+domain:
+  - Text
 parameters_dense:
   - ~1B

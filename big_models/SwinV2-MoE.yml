@@ -1,0 +1,11 @@
+name: SwinV2-MoE
+release_date: 2022/06/07
+affiliation:
+  - Microsoft
+paper/news: https://arxiv.org/abs/2206.03382
+domain:
+  - Vision
+parameters_dense:
+  - 1B
+  - 2B
+code: https://github.com/microsoft/Swin-Transformer

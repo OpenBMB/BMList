@@ -1,0 +1,14 @@
+name: Cedille
+release_date: 2022/02/07
+affiliation:
+  - Cedille AI
+language:
+  - French
+paper/news: https://arxiv.org/abs/2202.03371
+domain:
+  - Text
+parameters_dense:
+  - 6B
+model: https://github.com/coteries/cedille-ai#mesh-transformer
+code: https://github.com/coteries/cedille-ai#why-is-this-repository-empty
+api: https://app.cedille.ai/

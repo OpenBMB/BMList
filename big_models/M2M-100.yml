@@ -5,6 +5,8 @@ affiliation:
 language:
   - Multilingual
 paper/news: https://arxiv.org/abs/2010.11125
+domain:
+  - Text
 parameters_dense:
   - 1.2B
   - 12B

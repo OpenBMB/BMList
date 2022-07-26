@@ -5,6 +5,8 @@ affiliation:
 language:
   - English
 paper/news: https://arxiv.org/abs/2101.03961
+domain:
+  - Text
 parameters_MoE:
   - 7B
   - 26B

@@ -5,6 +5,8 @@ affiliation:
 language:
   - Chinese
 paper/news: https://idea.edu.cn/fengshenbang-lm.html
+domain:
+  - Text
 parameters_dense:
   - 3.5B
 model: https://huggingface.co/IDEA-CCNL/YuyuanQA-GPT2-3.5B

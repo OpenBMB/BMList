@@ -1,0 +1,10 @@
+name: Swin Transformer V2
+release_date: 2021/11/18
+affiliation:
+  - Microsoft
+paper/news: https://arxiv.org/abs/2111.09883
+domain:
+  - Vision
+parameters_dense:
+  - 3B
+code: https://github.com/microsoft/Swin-Transformer
