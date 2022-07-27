@@ -56,7 +56,7 @@ In the website, we currently present five figures, which are previewed below. An
 
 # Contribution
 
-We welcome everyone to add new models. Please check our [contributing guidelines](https://github.com/OpenBMB/BMList/blob/master/CONTRIBUTING.md) to see how to contribute.
+We welcome everyone to add new models. Please check our [contributing guidelines](https://github.com/OpenBMB/BMList/blob/main/CONTRIBUTING.md) to see how to contribute.
 
 Once you added a model, the multi-dimensional table and the website will be updated. Don't worry about that!
 
