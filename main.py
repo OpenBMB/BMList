@@ -216,13 +216,18 @@ def plot_bar(model_list):
 
 if __name__ == "__main__":
     main_path = "./big_models"
+    json_file = "all_models.json"
+    with open(json_file, 'r') as f:
+        old_model_list = json.load(f)[1:]
+    
     model_list = get_model_list(main_path)
-    # add last updated date
-    model_list =  [{"last_updated": datetime.now().strftime("%Y/%m/%d")}] + model_list
-    output_file = "all_models.json"
-    write_to_json(model_list, output_file)
 
-    if not os.path.exists("figures"):
-        os.mkdir("figures")
-    plot_scatter(model_list)
-    plot_bar(model_list)
+    if model_list != old_model_list:
+        # add last updated date
+        model_list =  [{"last_updated": datetime.now().strftime("%Y/%m/%d")}] + model_list
+        write_to_json(model_list, json_file)
+
+        if not os.path.exists("figures"):
+            os.mkdir("figures")
+        plot_scatter(model_list)
+        plot_bar(model_list)
