@@ -1,0 +1,2 @@
+/*! build package in 2022/7/27 18:25:02 ! */
+import{m as n}from"./entry-7031672d.mjs";var c=()=>n;const s=({text:t,domId:r="chart-container"})=>{const a=document.querySelector(`#${r} canvas`),e=a.getContext("2d");return e.textAlign="center",e.textBaseline="middle",e.globalAlpha=.4,e.font="24px Microsoft Yahei",t=`Last updated: ${t||new Date().toLocaleDateString()}`,e.fillText(t,380,160),t="@OpenBMB",e.fillText(t,300,210),a};export{c as a,s as u};
