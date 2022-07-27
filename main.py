@@ -7,7 +7,6 @@ import seaborn as sns
 from collections import defaultdict
 from datetime import datetime
 import matplotlib.dates as mdates
-import math
 
 sns.set_style("darkgrid")
 font_path = "font/SourceHanSansCN-Regular.otf"
@@ -88,7 +87,8 @@ def plot_scatter(model_list):
         "Code": "cyan"
     }
 
-    for model in model_list:
+    last_updated = model_list[0]["last_updated"]
+    for model in model_list[1:]:
         # we plot two points if a model have both dense and MoE variants
         for variant in ["dense", "MoE"]:
             if "parameters_{}".format(variant) in model:
@@ -104,14 +104,6 @@ def plot_scatter(model_list):
                     )
                 )
                 parameters[id].append(param_list[-1])
-                # names[id].append(
-                #     model["name"] + ("(MoE)" if variant == "MoE" else "")
-                #     if param_list[-1] >= 20
-                #     else ""
-                # )
-                names[id].append(
-                    ""
-                )
 
     for id in dates.keys():
         x = list(map(lambda x: datetime.strptime(x, "%Y/%m/%d"), dates[id]))
@@ -140,6 +132,7 @@ def plot_scatter(model_list):
     plt.margins(y=0.2)
     # plt.xlabel('Date')
     plt.ylabel("Billion Parameters")
+    plt.text(0.5, 0.96, f"Last Updated: {last_updated}\n@OpenBMB", fontsize=6, c='gray', alpha=0.4, transform=plt.gca().transAxes)
 
     plt.savefig("figures/scatter.png", dpi=fig.dpi, bbox_inches="tight")
     print("[DONE] Draw Scatter diagram.")
@@ -155,7 +148,8 @@ def plot_bar(model_list):
     cnt_time = defaultdict(int)
     params_time = defaultdict(int)
 
-    for model in model_list:
+    last_updated = model_list[0]["last_updated"]
+    for model in model_list[1:]:
         affiliation_list = model["affiliation"]
 
         param_list = list()
@@ -185,6 +179,7 @@ def plot_bar(model_list):
     plt.xticks(rotation=90)
     # plt.xlabel('Affiliation')
     plt.ylabel("# Models")
+    plt.text(0.01, 0.96, f"Last Updated: {last_updated}\n@OpenBMB", fontsize=6, c='gray', alpha=0.4, transform=plt.gca().transAxes)
     plt.savefig("figures/affiliation_cnt.png", dpi=fig_cnt.dpi, bbox_inches="tight")
     print("[DONE] Draw bar chart (X: affiliation, Y: number of models).")
 
@@ -194,6 +189,7 @@ def plot_bar(model_list):
     plt.xticks(rotation=90)
     # plt.xlabel('Affiliation')
     plt.ylabel("# Models")
+    plt.text(0.01, 0.96, f"Last Updated: {last_updated}\n@OpenBMB", fontsize=6, c='gray', alpha=0.4, transform=plt.gca().transAxes)
     plt.savefig("figures/time_cnt.png", dpi=fig_cnt.dpi, bbox_inches="tight")
     print("[DONE] Draw bar chart (X: time, Y: number of models).")   
 
@@ -206,6 +202,7 @@ def plot_bar(model_list):
     plt.xticks(rotation=90)
     # plt.xlabel('Affiliation')
     plt.ylabel("Billion Parameters")
+    plt.text(0.01, 0.96, f"Last Updated: {last_updated}\n@OpenBMB", fontsize=6, c='gray', alpha=0.4, transform=plt.gca().transAxes)
     plt.savefig("figures/affiliation_params.png", dpi=fig_params.dpi, bbox_inches="tight")
     print("[DONE] Draw bar chart (X: affiliation, Y: number of parameters).")
 
@@ -218,13 +215,15 @@ def plot_bar(model_list):
     plt.xticks(rotation=90)
     # plt.xlabel('Affiliation')
     plt.ylabel("Billion Parameters")
+    plt.text(0.01, 0.96, f"Last Updated: {last_updated}\n@OpenBMB", fontsize=6, c='gray', alpha=0.4, transform=plt.gca().transAxes)
     plt.savefig("figures/time_params.png", dpi=fig_params.dpi, bbox_inches="tight")
     print("[DONE] Draw bar chart (X: time, Y: number of parameters).")
 
 if __name__ == "__main__":
     main_path = "./big_models"
     model_list = get_model_list(main_path)
-
+    # add last updated date
+    model_list =  [{"last_updated": datetime.now().strftime("%Y/%m/%d")}] + model_list
     output_file = "all_models.json"
     write_to_json(model_list, output_file)
 
