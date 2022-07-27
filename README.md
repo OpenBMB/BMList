@@ -31,7 +31,7 @@ We show all information of big models in a [multi-dimensional table](https://a0q
 
 We maintain a [website]() to show statistics of big models. 
 
-In the website, we currently present five figures, which are previwed below. Any ideas for new figures are welcomed!
+In the website, we currently present five figures, which are previewed below. Any ideas for new figures are welcomed!
 
 ### Big Model Trend
 
