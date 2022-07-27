@@ -1,0 +1,9 @@
+name: V-MOE
+release_date: 2021/06/10
+affiliation:
+  - Google
+paper/news: https://arxiv.org/abs/2106.05974
+domain:
+  - Vision
+parameters_MoE:
+  - 14.7B

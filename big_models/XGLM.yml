@@ -5,6 +5,8 @@ affiliation:
 language:
   - Multilingual
 paper/news: https://arxiv.org/abs/2112.10668
+domain:
+  - Text
 parameters_dense:
   - 1.7B
   - 2.9B

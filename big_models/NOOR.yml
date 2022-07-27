@@ -1,0 +1,11 @@
+name: NOOR
+release_date: 2022/04/13
+affiliation:
+  - Technology Innovation Institute
+language:
+  - Arabic
+paper/news: https://www.tii.ae/news/technology-innovation-institute-announces-launch-noor-worlds-largest-arabic-nlp-model
+domain:
+  - Text
+parameters_dense:
+  - 10B

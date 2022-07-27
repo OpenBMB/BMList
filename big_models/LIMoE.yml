@@ -1,0 +1,12 @@
+name: LIMoE
+release_date: 2022/06/26
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/2206.02770
+domain:
+  - Text
+  - Vision
+parameters_MoE:
+  - 5.6B

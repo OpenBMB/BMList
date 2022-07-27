@@ -1,0 +1,11 @@
+name: PolyCoder
+release_date: 2022/02/26
+affiliation:
+  - CMU
+paper/news: https://arxiv.org/abs/2202.13169
+domain:
+  - Code
+parameters_dense:
+  - 2.7B
+model: https://github.com/VHellendoorn/Code-LMs#available-models
+code: https://github.com/VHellendoorn/Code-LMs

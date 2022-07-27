@@ -1,10 +1,12 @@
-name: 'XLM-R '
+name: XLM-R 
 release_date: 2021/05/02
 affiliation:
   - Facebook
 language:
   - Multilingual
 paper/news: https://arxiv.org/abs/2105.00572
+domain:
+  - Text
 parameters_dense:
   - 3.5B
   - 10.7B

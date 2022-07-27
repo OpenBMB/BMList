@@ -33,12 +33,16 @@ affiliation:
   - OpenBMB
   - ModelBest
 
-# Now you can choose English/Chinese/Multilingual
+# Specify one or more languages
 language:
   - English
   - Chinese
 
 paper/news: https://the-link-to-the-paper-or-news
+
+# Specify one or more domains among 'Text', 'Vision', 'Audio' and 'Code'
+domain:
+  - Text
 
 parameters_dense:
   - 1B
@@ -57,7 +61,9 @@ api: https://the-link-to-the-api
 
 Here are some notes:
 
-* ``name``, ``release_date``, ``affiliation`` and ``language`` are required.
+* ``name``, ``release_date``, ``affiliation``, ``domain`` and ``paper/news`` are required.
+
+* If the ``domain`` is "text", ``language`` is required.
 
 * If the model supports multiple languages, the ``language`` can be "Multilingual".
 

@@ -5,6 +5,8 @@ affiliation:
 language:
   - English
 paper/news: https://arxiv.org/abs/2109.09519
+domain:
+  - Text
 parameters_dense:
   - 11B
 model: https://github.com/PaddlePaddle/Knover/blob/develop/projects/PLATO-XL/README.md#pre-trained-dialogue-generation-model

@@ -1,0 +1,13 @@
+name: Wudao(悟道) 2.0
+release_date: 2021/06/01
+affiliation:
+  - BAAI
+language:
+  - English
+  - Chinese
+paper/news: https://www.sohu.com/na/469857971_473283
+domain:
+  - Text
+  - Vision
+parameters_MoE:
+  - 1750B

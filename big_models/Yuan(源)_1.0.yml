@@ -5,6 +5,8 @@ affiliation:
 language:
   - Chinese
 paper/news: https://arxiv.org/abs/2110.04725
+domain:
+  - Text
 parameters_dense:
   - 13B
   - 245B

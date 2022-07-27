@@ -9,6 +9,8 @@ language:
   - English
   - Chinese
 paper/news: https://arxiv.org/abs/2103.10360
+domain:
+  - Text
 parameters_dense:
   - 10B
 model: https://github.com/THUDM/GLM#pretrained-models

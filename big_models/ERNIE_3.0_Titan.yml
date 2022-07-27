@@ -1,4 +1,4 @@
-name: 'ERNIE 3.0 Titan '
+name: ERNIE 3.0 Titan 
 release_date: 2021/12/23
 affiliation:
   - Peng Cheng Laboratory
@@ -6,5 +6,7 @@ affiliation:
 language:
   - Chinese
 paper/news: https://arxiv.org/abs/2112.12731
+domain:
+  - Text
 parameters_dense:
   - 260B

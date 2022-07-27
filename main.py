@@ -47,21 +47,26 @@ def write_to_json(model_list, output_file):
     print("[DONE] Write to {}.".format(output_file))
 
 
-def get_lang(language):
+def get_identifier(model):
     """
-    Get language shown in the diagram
+    Get identifier shown in the diagram
     """
-
-    if "English" in language:
-        lang = "English"
-    elif "Chinese" in language:
-        lang = "Chinese"
-    elif "Multilingual" in language:
-        lang = "Multilingual"
+    
+    domain = model["domain"]
+    if "Text" in domain:
+        language = model["language"]
+        if "English" in language:
+            identifier = "English"
+        elif "Chinese" in language:
+            identifier = "Chinese"
+        elif "Multilingual" in language:
+            identifier = "Multilingual"
+        else:
+            identifier = "Others"
     else:
-        lang = "Others"
+        identifier = domain[0]
 
-    return lang
+    return identifier
 
 
 def plot_scatter(model_list):
@@ -78,14 +83,17 @@ def plot_scatter(model_list):
         "Chinese": "orange",
         "Multilingual": "blue",
         "Others": "yellow",
+        "Vision": "red",
+        "Audio": "purple",
+        "Code": "cyan"
     }
 
     for model in model_list:
         # we plot two points if a model have both dense and MoE variants
         for variant in ["dense", "MoE"]:
             if "parameters_{}".format(variant) in model:
-                lang = get_lang(model["language"])
-                dates[lang].append(model["release_date"])
+                id = get_identifier(model)
+                dates[id].append(model["release_date"])
 
                 param_list = sorted(
                     list(
@@ -95,28 +103,31 @@ def plot_scatter(model_list):
                         )
                     )
                 )
-                parameters[lang].append(param_list[-1])
-                names[lang].append(
-                    model["name"] + ("(MoE)" if variant == "MoE" else "")
-                    if param_list[-1] >= 20
-                    else ""
+                parameters[id].append(param_list[-1])
+                # names[id].append(
+                #     model["name"] + ("(MoE)" if variant == "MoE" else "")
+                #     if param_list[-1] >= 20
+                #     else ""
+                # )
+                names[id].append(
+                    ""
                 )
 
-    for lang in dates.keys():
-        x = list(map(lambda x: datetime.strptime(x, "%Y/%m/%d"), dates[lang]))
-        y = parameters[lang]
+    for id in dates.keys():
+        x = list(map(lambda x: datetime.strptime(x, "%Y/%m/%d"), dates[id]))
+        y = parameters[id]
 
         plt.scatter(
             x,
             y,
             s=list(map(lambda x: x + 10, y)),
-            c=color_map[lang],
+            c=color_map[id],
             marker="o",
             alpha=0.7,
-            label=lang,
+            label=id,
         )
 
-        for i, label in enumerate(names[lang]):
+        for i, label in enumerate(names[id]):
             plt.text(x[i], y[i], label, rotation=30, fontsize=6)
 
     legend = plt.legend(loc="upper left")
@@ -139,48 +150,76 @@ def plot_bar(model_list):
     Draw bar chart w.r.t affiliations.
     """
 
-    model_cnt = defaultdict(int)
-    model_params = defaultdict(int)
+    cnt_affiliation = defaultdict(int)
+    params_affiliation = defaultdict(int)
+    cnt_time = defaultdict(int)
+    params_time = defaultdict(int)
 
     for model in model_list:
         affiliation_list = model["affiliation"]
+
+        param_list = list()
+        if "parameters_MoE" in model:
+            param_list += model["parameters_MoE"]
+        if "parameters_dense" in model:
+            param_list += model["parameters_dense"]
+        param_list = sorted(
+            list(map(lambda x: float(x.split("~")[-1].split("B")[0]), param_list))
+        )
+
         for affiliation in affiliation_list:
             if affiliation == "Facebook" or affiliation == "Meta":
                 affiliation = "Meta(Facebook)"
 
-            model_cnt[affiliation] += 1
+            cnt_affiliation[affiliation] += 1
+            params_affiliation[affiliation] += param_list[-1]  # only count the largest model
+        
+        date = model["release_date"]
+        y_m = date.rsplit('/', 1)[0]
+        cnt_time[y_m] += 1
+        params_time[y_m] += param_list[-1]  # only count the largest model
 
-            param_list = list()
-            if "parameters_MoE" in model:
-                param_list += model["parameters_MoE"]
-            if "parameters_dense" in model:
-                param_list += model["parameters_dense"]
-            param_list = sorted(
-                list(map(lambda x: float(x.split("~")[-1].split("B")[0]), param_list))
-            )
-            model_params[affiliation] += param_list[-1]  # only count the largest model
-
-    x, y_cnt = list(zip(*sorted(model_cnt.items(), key=lambda x: x[1], reverse=True)))
+    x, y_cnt = list(zip(*sorted(cnt_affiliation.items(), key=lambda x: x[1], reverse=True)))
     fig_cnt = plt.figure(dpi=300, figsize=(12, 6))
     plt.bar(x, y_cnt, width=0.4, alpha=0.8, color="blue")
     plt.xticks(rotation=90)
     # plt.xlabel('Affiliation')
     plt.ylabel("# Models")
-    plt.savefig("figures/bar_cnt.png", dpi=fig_cnt.dpi, bbox_inches="tight")
-    print("[DONE] Draw bar chart w.r.t. number of models.")
+    plt.savefig("figures/affiliation_cnt.png", dpi=fig_cnt.dpi, bbox_inches="tight")
+    print("[DONE] Draw bar chart (X: affiliation, Y: number of models).")
+
+    x, y_cnt = list(zip(*sorted(cnt_time.items(), key=lambda x: x[0], reverse=False)))
+    fig_cnt = plt.figure(dpi=300, figsize=(12, 6))
+    plt.bar(x, y_cnt, width=0.4, alpha=0.8, color="blue")
+    plt.xticks(rotation=90)
+    # plt.xlabel('Affiliation')
+    plt.ylabel("# Models")
+    plt.savefig("figures/time_cnt.png", dpi=fig_cnt.dpi, bbox_inches="tight")
+    print("[DONE] Draw bar chart (X: time, Y: number of models).")   
 
     fig_params = plt.figure(dpi=300, figsize=(12, 6))
     x, y_params = list(
-        zip(*sorted(model_params.items(), key=lambda x: x[1], reverse=True))
+        zip(*sorted(params_affiliation.items(), key=lambda x: x[1], reverse=True))
     )
     plt.bar(x, y_params, width=0.4, alpha=0.8, color="blue")
     plt.yscale("log", base=2)
     plt.xticks(rotation=90)
     # plt.xlabel('Affiliation')
     plt.ylabel("Billion Parameters")
-    plt.savefig("figures/bar_params.png", dpi=fig_params.dpi, bbox_inches="tight")
-    print("[DONE] Draw bar chart w.r.t. number of parameters.")
+    plt.savefig("figures/affiliation_params.png", dpi=fig_params.dpi, bbox_inches="tight")
+    print("[DONE] Draw bar chart (X: affiliation, Y: number of parameters).")
 
+    fig_params = plt.figure(dpi=300, figsize=(12, 6))
+    x, y_params = list(
+        zip(*sorted(params_time.items(), key=lambda x: x[0], reverse=False))
+    )
+    plt.bar(x, y_params, width=0.4, alpha=0.8, color="blue")
+    plt.yscale("log", base=2)
+    plt.xticks(rotation=90)
+    # plt.xlabel('Affiliation')
+    plt.ylabel("Billion Parameters")
+    plt.savefig("figures/time_params.png", dpi=fig_params.dpi, bbox_inches="tight")
+    print("[DONE] Draw bar chart (X: time, Y: number of parameters).")
 
 if __name__ == "__main__":
     main_path = "./big_models"

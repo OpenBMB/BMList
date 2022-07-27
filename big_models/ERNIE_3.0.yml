@@ -5,5 +5,7 @@ affiliation:
 language:
   - Chinese
 paper/news: https://arxiv.org/abs/2107.02137
+domain:
+  - Text
 parameters_dense:
   - 10B

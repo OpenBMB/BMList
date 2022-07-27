@@ -6,6 +6,8 @@ affiliation:
 language:
   - Chinese
 paper/news: https://arxiv.org/abs/2108.01547
+domain:
+  - Text
 parameters_dense:
   - 2.8B
 model: https://wudaoai.cn/model/detail/EVA#download

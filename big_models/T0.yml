@@ -1,0 +1,14 @@
+name: T0
+release_date: 2021/10/15
+affiliation:
+  - BigScience
+language:
+  - English
+paper/news: https://arxiv.org/abs/2110.08207
+domain:
+  - Text
+parameters_dense:
+  - 3B
+  - 11B
+model: https://github.com/bigscience-workshop/t-zero#released-checkpoints
+code: https://github.com/bigscience-workshop/t-zero

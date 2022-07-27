@@ -6,6 +6,9 @@ affiliation:
 language:
   - Chinese
 paper/news: https://arxiv.org/abs/2103.00823
+domain:
+  - Text
+  - Vision
 parameters_dense:
   - 10B
   - 100B

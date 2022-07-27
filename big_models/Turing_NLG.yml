@@ -5,5 +5,7 @@ affiliation:
 language:
   - English
 paper/news: https://www.microsoft.com/en-us/research/blog/turing-nlg-a-17-billion-parameter-language-model-by-microsoft/
+domain:
+  - Text
 parameters_dense:
   - 17B

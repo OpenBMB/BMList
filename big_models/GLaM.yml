@@ -5,6 +5,8 @@ affiliation:
 language:
   - English
 paper/news: https://arxiv.org/abs/2112.06905
+domain:
+  - Text
 parameters_dense:
   - 1.7B
   - 8.7B

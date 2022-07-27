@@ -1,0 +1,12 @@
+name: WebGPT
+release_date: 2021/12/17
+affiliation:
+  - OpenAI
+language:
+  - English
+paper/news: https://arxiv.org/abs/2112.09332
+domain:
+  - Text
+parameters_dense:
+  - 13B
+  - 175B

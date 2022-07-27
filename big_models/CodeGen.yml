@@ -1,0 +1,13 @@
+name: CodeGen
+release_date: 2022/03/25
+affiliation:
+  - Salesforce
+paper/news: https://arxiv.org/abs/2203.13474
+domain:
+  - Code
+parameters_dense:
+  - 2.7B
+  - 6.1B
+  - 16.1B
+model: https://github.com/salesforce/CodeGen#setup
+code: https://github.com/salesforce/CodeGen

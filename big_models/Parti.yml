@@ -1,0 +1,13 @@
+name: Parti
+release_date: 2022/06/22
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/2206.10789
+domain:
+  - Vision
+  - Text
+parameters_dense:
+  - 3B
+  - 20B

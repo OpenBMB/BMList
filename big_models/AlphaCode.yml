@@ -1,0 +1,12 @@
+name: AlphaCode
+release_date: 2022/03/16
+affiliation:
+  - DeepMind
+paper/news: https://arxiv.org/abs/2203.07814
+domain:
+  - Code
+parameters_dense:
+  - 1.1B
+  - 2.8B
+  - 8.7B
+  - 41.1B
