@@ -27,9 +27,11 @@ We find that it is not intuitive to show all information about big models in a G
 
 We show all information of big models in a [multi-dimensional table](https://a0qwpgc3qv.feishu.cn/base/bascn2lp9dYCNe6GKdRd5sfPwhd), which is easy to classify models by organizations, languages, domains, etc.
 
+<img src="figures/bmlist.png" width="1000px">
+
 ## Big Model Gallery
 
-We maintain a [website]() to show statistics of big models. 
+We maintain a [website](https://openbmb.github.io/BMList/trend) to show statistics of big models. 
 
 In the website, we currently present five figures, which are previewed below. Any ideas for new figures are welcomed!
 
