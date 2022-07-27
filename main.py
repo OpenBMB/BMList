@@ -55,13 +55,13 @@ def get_identifier(model):
     if "Text" in domain:
         language = model["language"]
         if "English" in language:
-            identifier = "Text(English)"
+            identifier = "Text (English)"
         elif "Chinese" in language:
-            identifier = "Text(Chinese)"
+            identifier = "Text (Chinese)"
         elif "Multilingual" in language:
-            identifier = "Text(Multilingual)"
+            identifier = "Text (Multilingual)"
         else:
-            identifier = "Text(Others)"
+            identifier = "Text (Others)"
     else:
         identifier = domain[0]
 
@@ -78,10 +78,10 @@ def plot_scatter(model_list):
     dates = defaultdict(list)
     names = defaultdict(list)
     color_map = {
-        "Text(English)": "green",
-        "Text(Chinese)": "orange",
-        "Text(Multilingual)": "blue",
-        "Text(Others)": "yellow",
+        "Text (English)": "green",
+        "Text (Chinese)": "orange",
+        "Text (Multilingual)": "blue",
+        "Text (Others)": "yellow",
         "Vision": "red",
         "Audio": "purple",
         "Code": "cyan"
@@ -223,6 +223,7 @@ if __name__ == "__main__":
     model_list = get_model_list(main_path)
 
     if model_list != old_model_list:
+        print("The model list is updated. Start to regenerate files.")
         # add last updated date
         model_list =  [{"last_updated": datetime.now().strftime("%Y/%m/%d")}] + model_list
         write_to_json(model_list, json_file)
