@@ -55,13 +55,13 @@ def get_identifier(model):
     if "Text" in domain:
         language = model["language"]
         if "English" in language:
-            identifier = "English"
+            identifier = "Text(English)"
         elif "Chinese" in language:
-            identifier = "Chinese"
+            identifier = "Text(Chinese)"
         elif "Multilingual" in language:
-            identifier = "Multilingual"
+            identifier = "Text(Multilingual)"
         else:
-            identifier = "Others"
+            identifier = "Text(Others)"
     else:
         identifier = domain[0]
 
@@ -78,10 +78,10 @@ def plot_scatter(model_list):
     dates = defaultdict(list)
     names = defaultdict(list)
     color_map = {
-        "English": "green",
-        "Chinese": "orange",
-        "Multilingual": "blue",
-        "Others": "yellow",
+        "Text(English)": "green",
+        "Text(Chinese)": "orange",
+        "Text(Multilingual)": "blue",
+        "Text(Others)": "yellow",
         "Vision": "red",
         "Audio": "purple",
         "Code": "cyan"
@@ -105,7 +105,7 @@ def plot_scatter(model_list):
                 )
                 parameters[id].append(param_list[-1])
 
-    for id in dates.keys():
+    for id in color_map.keys():
         x = list(map(lambda x: datetime.strptime(x, "%Y/%m/%d"), dates[id]))
         y = parameters[id]
 
@@ -130,7 +130,6 @@ def plot_scatter(model_list):
     plt.tight_layout()
     plt.gca().xaxis.set_major_locator(mdates.AutoDateLocator(minticks=12, maxticks=20))
     plt.margins(y=0.2)
-    # plt.xlabel('Date')
     plt.ylabel("Billion Parameters")
     plt.text(0.5, 0.96, f"Last Updated: {last_updated}\n@OpenBMB", fontsize=6, c='gray', alpha=0.4, transform=plt.gca().transAxes)
 
@@ -140,7 +139,7 @@ def plot_scatter(model_list):
 
 def plot_bar(model_list):
     """
-    Draw bar chart w.r.t affiliations.
+    Draw bar chart w.r.t affiliations or time.
     """
 
     cnt_affiliation = defaultdict(int)
@@ -177,7 +176,6 @@ def plot_bar(model_list):
     fig_cnt = plt.figure(dpi=300, figsize=(12, 6))
     plt.bar(x, y_cnt, width=0.4, alpha=0.8, color="blue")
     plt.xticks(rotation=90)
-    # plt.xlabel('Affiliation')
     plt.ylabel("# Models")
     plt.text(0.01, 0.96, f"Last Updated: {last_updated}\n@OpenBMB", fontsize=6, c='gray', alpha=0.4, transform=plt.gca().transAxes)
     plt.savefig("figures/affiliation_cnt.png", dpi=fig_cnt.dpi, bbox_inches="tight")
@@ -187,7 +185,6 @@ def plot_bar(model_list):
     fig_cnt = plt.figure(dpi=300, figsize=(12, 6))
     plt.bar(x, y_cnt, width=0.4, alpha=0.8, color="blue")
     plt.xticks(rotation=90)
-    # plt.xlabel('Affiliation')
     plt.ylabel("# Models")
     plt.text(0.01, 0.96, f"Last Updated: {last_updated}\n@OpenBMB", fontsize=6, c='gray', alpha=0.4, transform=plt.gca().transAxes)
     plt.savefig("figures/time_cnt.png", dpi=fig_cnt.dpi, bbox_inches="tight")
@@ -200,7 +197,6 @@ def plot_bar(model_list):
     plt.bar(x, y_params, width=0.4, alpha=0.8, color="blue")
     plt.yscale("log", base=2)
     plt.xticks(rotation=90)
-    # plt.xlabel('Affiliation')
     plt.ylabel("Billion Parameters")
     plt.text(0.01, 0.96, f"Last Updated: {last_updated}\n@OpenBMB", fontsize=6, c='gray', alpha=0.4, transform=plt.gca().transAxes)
     plt.savefig("figures/affiliation_params.png", dpi=fig_params.dpi, bbox_inches="tight")
@@ -213,7 +209,6 @@ def plot_bar(model_list):
     plt.bar(x, y_params, width=0.4, alpha=0.8, color="blue")
     plt.yscale("log", base=2)
     plt.xticks(rotation=90)
-    # plt.xlabel('Affiliation')
     plt.ylabel("Billion Parameters")
     plt.text(0.01, 0.96, f"Last Updated: {last_updated}\n@OpenBMB", fontsize=6, c='gray', alpha=0.4, transform=plt.gca().transAxes)
     plt.savefig("figures/time_params.png", dpi=fig_params.dpi, bbox_inches="tight")

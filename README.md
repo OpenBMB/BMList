@@ -14,26 +14,24 @@ In BMList, we list models that:
 
 1. Have at least 1 billion parameters;
 2. Have been publicly released either by a paper, an artice or a piece of news;
-3. In one or more domains among text, vision, audio and code.
 
-If you find any typos or mistakes in this repo, please feel free to raise issues or pull requests!
+If you find any typos or mistakes in this repo, please feel free to create issues or pull requests!
 
 
-# Demos
+# Model Expo
 
 We find that it is not intuitive to show all information about big models in a GitHub repo. So we use this repo to store raw data and provide two ways to present more information.
 
 
-## Multi-dimensional Table
+## Big Model List
 
-We show all information of big models in a [multi-dimensional table](https://a0qwpgc3qv.feishu.cn/base/bascn2lp9dYCNe6GKdRd5sfPwhd), which is easy to classify models by organizations/languages.
+We show all information of big models in a [multi-dimensional table](https://a0qwpgc3qv.feishu.cn/base/bascn2lp9dYCNe6GKdRd5sfPwhd), which is easy to classify models by organizations, languages, domains, etc.
 
 ## Big Model Gallery
 
-We publish a [website]() to show statistics of big models. 
+We maintain a [website]() to show statistics of big models. 
 
-Now we present three figures for interested users, and we welcome ideas for new figures.
-
+In the website, we currently present five figures, which are previwed below. Any ideas for new figures are welcomed!
 
 ### Big Model Trend
 

@@ -22,7 +22,7 @@ $ git remote add upstream https://github.com/OpenBMB/BMList.git
 * Add the model information in the file. An example is:
 
 ```
-# If the model does not have a Chinese name, just write like "BigModel"
+# If the model only has an english name, just write "BigModel" here
 name: BigModel(大模型)
 
 # the date should be in the 20XX/XX/XX format
@@ -65,7 +65,7 @@ Here are some notes:
 
 * If the ``domain`` is "text", ``language`` is required.
 
-* If the model supports multiple languages, the ``language`` can be "Multilingual".
+* If the model supports three or more languages, the ``language`` should be "Multilingual".
 
 * You need to determine whether the model is dense or MoE-based (Mixture of Experts), or even both, and fill in the number of parameters into ``parameters_dense`` or/and ``parameters_MoE``.
 
@@ -83,4 +83,5 @@ Then you can push the code to your own repo:
 $ git push -u origin main
 ```
 Finally, you can make a pull request from your GitHub repo and merge it with ours. 
+
 Thanks for the contribution!
