@@ -1,10 +1,10 @@
 name: ERNIE-VILG
-release_date: 2020/09/24
+release_date: 2021/12/01
 affiliation:
   - Baidu
 language:
   - English
-paper/news: https://arxiv.org/abs/2006.16934
+paper/news: https://arxiv.org/pdf/2112.15283.pdf
 domain:
   - Vision
 parameters_dense:
