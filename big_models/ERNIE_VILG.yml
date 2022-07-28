@@ -9,5 +9,4 @@ domain:
   - Vision
 parameters_dense:
   -  10B
-model: https://ernie-github.cdn.bcebos.com/model-ernie-vil-large-VCR-task-pre-en.1.tar.gz
-code: https://github.com/PaddlePaddle/ERNIE/tree/repro/ernie-vil
+api: https://wenxin.baidu.com/younger/apiDetail?id=20008
