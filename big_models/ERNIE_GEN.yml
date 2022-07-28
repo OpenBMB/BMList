@@ -1,21 +1,13 @@
 name: ERNIE-GEN
-
 release_date: 2020/05/19
-
 affiliation:
   - Baidu
-
 language:
   - English
-
 paper/news: https://arxiv.org/abs/2001.11314.pdf
-
 domain:
   - Text Generation
-
 parameters_dense:
   - 340M(430GB)
-
 model: https://ernie.bj.bcebos.com/ernie_gen_large_430g.tgz
-
 code: https://github.com/PaddlePaddle/ERNIE/tree/repro/ernie-gen
