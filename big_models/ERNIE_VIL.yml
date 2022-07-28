@@ -1,0 +1,23 @@
+name: ERNIE-VIL
+
+release_date: 2020/09/24
+
+affiliation:
+  - Baidu
+
+language:
+  - English
+
+paper/news: https://arxiv.org/abs/2006.16934
+
+domain:
+  - vision-language task
+  - Object Prediction
+  - Relationship Prediction
+
+parameters_dense:
+  -  24-text-stream-layer, 6-visual-stream-layer(2GB)
+
+model: https://ernie-github.cdn.bcebos.com/model-ernie-vil-large-VCR-task-pre-en.1.tar.gz
+
+code: https://github.com/PaddlePaddle/ERNIE/tree/repro/ernie-vil
