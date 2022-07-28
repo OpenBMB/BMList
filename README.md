@@ -13,7 +13,7 @@ Welcome to BMList! We wish to use this list to show the recent trend of big mode
 In BMList, we list models that:
 
 1. Have at least 1 billion parameters;
-2. Have been publicly released either by a paper, an artice or a piece of news;
+2. Have been publicly released either by a paper, an artice or a piece of news.
 
 If you find any typos or mistakes in this repo, please feel free to create issues or pull requests!
 
@@ -31,7 +31,7 @@ We show all information of big models in a [multi-dimensional table](https://a0q
 
 ## Big Model Gallery
 
-We maintain a [website](https://openbmb.github.io/BMList/trend) to show statistics of big models. 
+We maintain a [website](https://openbmb.github.io/BMList) to show statistics of big models. 
 
 In the website, we currently present five figures, which are previewed below. Any ideas for new figures are welcomed!
 
