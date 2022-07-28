@@ -3,10 +3,10 @@ release_date: 2021/12/01
 affiliation:
   - Baidu
 language:
-  - English
+  - Chinese
 paper/news: https://arxiv.org/pdf/2112.15283.pdf
 domain:
-  - Vision
+  - Text
 parameters_dense:
   - 10B
 api: https://wenxin.baidu.com/younger/apiDetail?id=20008
