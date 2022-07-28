@@ -1,0 +1,13 @@
+name: ERNIE-ViLG
+release_date: 2021/12/31
+affiliation:
+  - Baidu
+language:
+  - Chinese
+paper/news: https://arxiv.org/pdf/2112.15283.pdf
+domain:
+  - Text
+  - Vision
+parameters_dense:
+  - 10B
+api: https://wenxin.baidu.com/younger/apiDetail?id=20008
