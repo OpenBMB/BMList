@@ -1,6 +1,6 @@
 {
   "node_modules/nuxt/dist/app/entry.mjs": {
-    "file": "entry-3adb3e70.mjs",
+    "file": "entry-b43f0aea.mjs",
     "src": "node_modules/nuxt/dist/app/entry.mjs",
     "isEntry": true,
     "dynamicImports": [
@@ -17,7 +17,7 @@
     ]
   },
   "virtual:nuxt:/Users/lovangry/workspace/bm-list/.nuxt/error-component.mjs": {
-    "file": "error-component-4c1dc9e2.mjs",
+    "file": "error-component-df019fcc.mjs",
     "src": "virtual:nuxt:/Users/lovangry/workspace/bm-list/.nuxt/error-component.mjs",
     "isDynamicEntry": true,
     "imports": [
@@ -29,7 +29,7 @@
     ]
   },
   "pages/index.vue": {
-    "file": "index-3fa9e157.mjs",
+    "file": "index-45e8a9a8.mjs",
     "src": "pages/index.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -37,7 +37,7 @@
     ]
   },
   "pages/list.vue": {
-    "file": "list-6ffe68c0.mjs",
+    "file": "list-c1079d2e.mjs",
     "src": "pages/list.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -49,7 +49,7 @@
     "file": "useData-2ac80d2a.mjs"
   },
   "pages/organizations.vue": {
-    "file": "organizations-413f2877.mjs",
+    "file": "organizations-01abc3a1.mjs",
     "src": "pages/organizations.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -58,7 +58,7 @@
     ]
   },
   "pages/time.vue": {
-    "file": "time-42bfbcd0.mjs",
+    "file": "time-23815685.mjs",
     "src": "pages/time.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -67,7 +67,7 @@
     ]
   },
   "pages/trend.vue": {
-    "file": "trend-dff828f2.mjs",
+    "file": "trend-40044b27.mjs",
     "src": "pages/trend.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -76,18 +76,18 @@
     ]
   },
   "layouts/default.vue": {
-    "file": "default-750c8388.mjs",
+    "file": "default-cdc6024f.mjs",
     "src": "layouts/default.vue",
     "isDynamicEntry": true,
     "imports": [
       "node_modules/nuxt/dist/app/entry.mjs"
     ],
     "css": [
-      "default.a58d7203.css"
+      "default.b0b21c6d.css"
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": {
-    "file": "error-404-399d5fc6.mjs",
+    "file": "error-404-7d747a61.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
     "isDynamicEntry": true,
     "imports": [
@@ -98,7 +98,7 @@
     ]
   },
   "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": {
-    "file": "error-500-0c8c3ade.mjs",
+    "file": "error-500-3d229d0e.mjs",
     "src": "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue",
     "isDynamicEntry": true,
     "imports": [
