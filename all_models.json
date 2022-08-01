@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/07/28"
+        "last_updated": "2022/08/01"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -2178,17 +2178,19 @@
         "name": "NLLB",
         "release_date": "2022/07/11",
         "affiliation": [
-            "Meta"
+            "Meta",
+            "UC Berkeley",
+            "Johns Hopkins University"
         ],
         "language": [
             "Multilingual"
         ],
-        "paper/news": "https://research.facebook.com/publications/no-language-left-behind/",
+        "paper/news": "https://arxiv.org/abs/2207.04672",
         "domain": [
             "Text"
         ],
         "parameters_dense": [
-            "1.2B",
+            "1.3B",
             "3.3B"
         ],
         "parameters_MoE": [
