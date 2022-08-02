@@ -47,3 +47,4 @@ jobs:
             git checkout gh_pages
             git cherry-pick ${JSON_COMMIT_SHA1}
             git push -u origin gh_pages
+          fi
