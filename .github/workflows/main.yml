@@ -11,6 +11,8 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v4.0.0
         with:
           python-version: 3.8
@@ -44,6 +46,8 @@ jobs:
           fi
           git push -u origin main
           if [[ -z ${JSON_COMMIT_SHA1} ]]; then
+            echo "no changes for gh_pages branch"
+          else
             git checkout gh_pages
             git cherry-pick ${JSON_COMMIT_SHA1}
             git push -u origin gh_pages
