@@ -26,11 +26,24 @@ jobs:
           echo "-------- push to GitHub --------"
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git add .
+          git add figures/*
           changes=`git status --porcelain`
           if [[ -z ${changes} ]]; then
             echo "no changes"
           else
-            git commit -m "update files"
+            git commit -m "update figures"
+          fi
+          git add all_models.json
+          changes=`git status --porcelain`
+          JSON_COMMIT_SHA1=""
+          if [[ -z ${changes} ]]; then
+            echo "no changes"
+          else
+            git commit -m "update json file"
+            JSON_COMMIT_SHA1=git rev-parse --short main
           fi
           git push -u origin main
+          if [[ -z ${JSON_COMMIT_SHA1} ]]; then
+            git checkout gh_pages
+            git cherry-pick ${JSON_COMMIT_SHA1}
+            git push -u origin gh_pages
