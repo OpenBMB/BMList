@@ -1,0 +1,13 @@
+name: ESM2
+release_date: 2022/07/21
+affiliation:
+  - Meta
+  - New York University
+  - Stanford University
+  - MIT
+paper/news: https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1
+domain:
+  - Protein
+parameters_dense:
+  - 3B
+  - 15B
