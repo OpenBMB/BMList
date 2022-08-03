@@ -78,13 +78,14 @@ def plot_scatter(model_list):
     dates = defaultdict(list)
     names = defaultdict(list)
     color_map = {
-        "Text (English)": "green",
-        "Text (Chinese)": "orange",
-        "Text (Multilingual)": "blue",
-        "Text (Others)": "yellow",
-        "Vision": "red",
-        "Audio": "purple",
-        "Code": "cyan"
+        "Text (English)": "#459F48",
+        "Text (Chinese)": "#F8B947",
+        "Text (Multilingual)": "#2F2EFC",
+        "Text (Others)": "#FC832E",
+        "Vision": "#953ACE",
+        "Audio": "#E63D2A",
+        "Code": "#A57041",
+        "Protein": "#4BB2EE"
     }
 
     last_updated = model_list[0]["last_updated"]
@@ -113,7 +114,7 @@ def plot_scatter(model_list):
             x,
             y,
             s=list(map(lambda x: x + 10, y)),
-            c=color_map[id],
+            c=[color_map[id]],
             marker="o",
             alpha=0.7,
             label=id,
