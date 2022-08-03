@@ -3,11 +3,12 @@ release_date: 2022/06/27
 affiliation:
   - Salesforce
   - Johns Hopkins University
+  - Columbia University
 paper/news: https://arxiv.org/pdf/2206.13517.pdf
 domain:
   - Protein
 parameters_dense:
+  - 2.7B
   - 6.4B
-  
 model: https://storage.googleapis.com/sfr-progen-research/checkpoints/progen2-xlarge.tar.gz
 code: https://github.com/salesforce/progen
