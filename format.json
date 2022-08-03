@@ -93,7 +93,8 @@
                     "anyOf": [
                         {"const": "Vision"},
                         {"const": "Audio"},
-                        {"const": "Code"}
+                        {"const": "Code"},
+                        {"const": "Protein"}
                     ]
                 }
             }
