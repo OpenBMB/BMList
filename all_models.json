@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/08/01"
+        "last_updated": "2022/08/03"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -2156,6 +2156,25 @@
         ]
     },
     {
+        "name": "ProGen2",
+        "release_date": "2022/06/27",
+        "affiliation": [
+            "Salesforce",
+            "Johns Hopkins University",
+            "Columbia University"
+        ],
+        "paper/news": "https://arxiv.org/pdf/2206.13517.pdf",
+        "domain": [
+            "Protein"
+        ],
+        "parameters_dense": [
+            "2.7B",
+            "6.4B"
+        ],
+        "model": "https://storage.googleapis.com/sfr-progen-research/checkpoints/progen2-xlarge.tar.gz",
+        "code": "https://github.com/salesforce/progen"
+    },
+    {
         "name": "Minerva",
         "release_date": "2022/06/29",
         "affiliation": [
@@ -2220,5 +2239,23 @@
         ],
         "model": "https://huggingface.co/bigscience/bloom/tree/main",
         "code": "https://github.com/huggingface/transformers/tree/main/src/transformers/models/bloom"
+    },
+    {
+        "name": "ESM2",
+        "release_date": "2022/07/21",
+        "affiliation": [
+            "Meta",
+            "New York University",
+            "Stanford University",
+            "MIT"
+        ],
+        "paper/news": "https://www.biorxiv.org/content/10.1101/2022.07.20.500902v1",
+        "domain": [
+            "Protein"
+        ],
+        "parameters_dense": [
+            "3B",
+            "15B"
+        ]
     }
 ]
