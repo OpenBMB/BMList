@@ -2,12 +2,11 @@ name: GLM-130B
 release_date: 2022/08/05
 affiliation:
   - Tsinghua University
-  - BAAI
-  - MIT
+  - Zhipu.AI
 language:
   - English
   - Chinese
-paper/news: https://aclanthology.org/2022.acl-long.26/
+paper/news: http://keg.cs.tsinghua.edu.cn/glm-130b/posts/glm-130b/
 domain:
   - Text
 parameters_dense:
