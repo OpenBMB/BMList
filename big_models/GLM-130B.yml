@@ -1,0 +1,15 @@
+name: GLM-130B
+release_date: 2022/08/05
+affiliation:
+  - Tsinghua University
+  - Zhipu.AI
+language:
+  - English
+  - Chinese
+paper/news: http://keg.cs.tsinghua.edu.cn/glm-130b/posts/glm-130b/
+domain:
+  - Text
+parameters_dense:
+  - 130B
+model: https://docs.google.com/forms/d/e/1FAIpQLSehr5Dh_i3TwACmFFi8QEgIVNYGmSPwV0GueIcsUev0NEfUug/viewform
+code: https://github.com/THUDM/GLM-130B
