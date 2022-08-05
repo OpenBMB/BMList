@@ -40,7 +40,7 @@ language:
 
 paper/news: https://the-link-to-the-paper-or-news
 
-# Specify one or more domains among 'Text', 'Vision', 'Audio' and 'Code'
+# Specify one or more domains among 'Text', 'Vision', 'Audio', 'Code' and 'Protein'
 domain:
   - Text
 

@@ -18,22 +18,23 @@ In BMList, we list models that:
 If you find any typos or mistakes in this repo, please feel free to create issues or pull requests!
 
 
+# What's New
+
+* 2022/08/05 We have upgraded the multi-dimensional table, and now you can filter the records as you wish!
+
 # Model Expo
 
-We find that it is not intuitive to show all information about big models in a GitHub repo. So we use this repo to store raw data and provide two ways to present more information.
-
+**We maintain a [website](https://openbmb.github.io/BMList) to show statistics of big models from multiple perspectives.**
 
 ## Big Model List
 
-We show all information of big models in a [multi-dimensional table](https://a0qwpgc3qv.feishu.cn/base/bascn2lp9dYCNe6GKdRd5sfPwhd), which is easy to classify models by organizations, languages, domains, etc.
+We show all information of big models in a [multi-dimensional table](https://openbmb.github.io/BMList/list), in which you can easily classify models by organizations, languages, domains, etc.
 
 <img src="figures/bmlist.png" width="1000px">
 
 ## Big Model Gallery
 
-**We maintain a [website](https://openbmb.github.io/BMList) to show statistics of big models.**
-
-In the website, we currently present five figures, which are previewed below. Any ideas for new figures are welcomed!
+We also host a big model gallery to present figures about big models. Currently, there are five figures, previewed below, and any ideas for new figures are welcomed!
 
 ### Big Model Trend
 
