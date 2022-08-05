@@ -34,7 +34,7 @@ We show all information of big models in a [multi-dimensional table](https://ope
 
 ## Big Model Gallery
 
-We also host a big model gallery to present figures about big models. Currently, there are five figures, previewed below, and any ideas for new figures are welcomed!
+We also host a gallery to present figures about big models. Currently, there are five figures, previewed below, and any ideas for new figures are welcomed!
 
 ### Big Model Trend
 
@@ -61,7 +61,7 @@ We also host a big model gallery to present figures about big models. Currently,
 
 We welcome everyone to add new models. Please check our [contributing guidelines](https://github.com/OpenBMB/BMList/blob/main/CONTRIBUTING.md) to see how to contribute.
 
-Once you added a model, the multi-dimensional table and the website will be updated. Don't worry about that!
+Once you added a model, the multi-dimensional table and the website will be automatically updated. Don't worry about that!
 
 
 ## Contributors
