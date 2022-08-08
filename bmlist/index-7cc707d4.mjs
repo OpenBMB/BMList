@@ -1,0 +1,44 @@
+/*! build package in 2022/8/8 10:10:23 ! */
+import{e as O,a as M,b as L,r as S,f as j,h as A,i as B,o as T,j as C,k as _,w as D,v as F,u as b,l as $,t as k,p as z,m as N,c as I}from"./entry-45502ed6.mjs";import{u as V,a as P}from"./useState-4aadcc8f.mjs";var U=()=>O;const u=c=>(z("data-v-2a15577d"),c=c(),N(),c),R={class:"trend"},W=u(()=>_("div",{class:"chart-title"},"Big Model Trend",-1)),Y={style:{position:"relative"}},q=u(()=>_("div",{id:"trend-container",class:"chart-container"},null,-1)),G={class:"watermark"},H=u(()=>_("br",null,null,-1)),J=$(" @OpenBMB "),K=L({__name:"Trend",setup(c){let p,d=S(""),n;const x=V();x.value={loading:!0,isLoadFailed:!1};const h=j(),E=()=>{var m;return fetch(`${(m=h==null?void 0:h.app)==null?void 0:m.baseURL}all_models.json`).then(i=>i.json()).then(i=>{var f;x.value={loading:!1,isLoadFailed:!1},d.value=(f=i==null?void 0:i[0])==null?void 0:f.last_updated,n=i.reduce((e,a,o)=>{var v,y,w;if(o==0)return e;const l=+new Date(a.release_date);let t=new Array;return a.parameters_dense&&(a.parameters_max_dense=Math.max.call(null,...(v=a.parameters_dense)==null?void 0:v.map(s=>Number(s.replace("~","").replace("B",""))))),a.parameters_MoE&&(a.parameters_max_moe=Math.max.call(null,...(y=a.parameters_MoE)==null?void 0:y.map(s=>Number(s.replace("~","").replace("B",""))))),a.domain.includes("Text")&&((w=a.language)==null||w.forEach(s=>{if(["English","Chinese","Multilingual"].includes(s))if(e[`Text (${s})`]||(e[`Text (${s})`]=[]),a.parameters_dense&&a.parameters_MoE)t=[l,Math.log2(a.parameters_max_dense),a.parameters_max_dense,...Object.values(a)],e[`Text (${s})`].push(t),t=new Array,t=[l,Math.log2(a.parameters_max_moe),a.parameters_max_moe,...Object.values(a),"MoE"],e[`Text (${s})`].push(t);else{const r=a.parameters_max_dense||a.parameters_max_moe;t=[l,Math.log2(r),r,...Object.values(a),a.parameters_max_moe?"MoE":""],e[`Text (${s})`].push(t)}else if(e["Text (Others)"]||(e["Text (Others)"]=[]),a.parameters_dense&&a.parameters_MoE)t=[l,Math.log2(a.parameters_max_dense),a.parameters_max_dense,...Object.values(a)],e["Text (Others)"].push(t),t=new Array,t=[l,Math.log2(a.parameters_max_moe),a.parameters_max_moe,...Object.values(a),"MoE"],e["Text (Others)"].push(t);else{const r=a.parameters_max_dense||a.parameters_max_moe;t=[l,Math.log2(r),r,...Object.values(a),a.parameters_max_moe?"MoE":""],e["Text (Others)"].push(t)}})),a.domain.forEach(s=>{if(s!=="Text")if(e[s]||(e[s]=[]),a.parameters_dense&&a.parameters_MoE)t=[l,Math.log2(a.parameters_max_dense),a.parameters_max_dense,...Object.values(a)],e[s].push(t),t=new Array,t=[l,Math.log2(a.parameters_max_moe),a.parameters_max_moe,...Object.values(a),"MoE"],e[s].push(t);else{const r=a.parameters_max_dense||a.parameters_max_moe;t=[l,Math.log2(r),r,...Object.values(a),a.parameters_max_moe?"MoE":""],e[s].push(t)}}),e},{})}).catch(()=>{n=[],x.value={loading:!0,isLoadFailed:!0}})},g={"Text (English)":"#459F48","Text (Chinese)":"#F8B947","Text (Multilingual)":"#2F2EFC","Text (Others)":"#FC832E",Vision:"#953ACE",Audio:"#E63D2A",Code:"#A57041",Protein:"#4BB2EE"};return A(()=>{setTimeout(async()=>{p=U().init(document.getElementById("trend-container")),await E(),console.log(Object.keys(n));let i={tooltip:{show:!0,formatter(e){debugger;return`<div style="display:flex;flex-direction:column;row-gap:2px;">
+                    <div class="flex-row" >
+                      <span class="canvas-tooltip__circle" style="--canvas-tooltip__color:${e.color}"></span>
+                      <span style="margin-right: 8px;">Time: </span>
+                      <span style="margin-inline-start: auto;">${e.data[4]}</span>
+                    </div>
+                    <div class="flex-row" >
+                      <span class="canvas-tooltip__circle" style="--canvas-tooltip__color:${e.color}"></span>
+                      <span style="margin-right: 8px;">Name: </span>
+                      <span style="margin-inline-start: auto;"> ${e.data.at(-1)==="MoE"?e.data[3]+" (MoE)":e.data[3]}  </span>
+                    </div>
+                    <div class="flex-row" >
+                      <span class="canvas-tooltip__circle" style="--canvas-tooltip__color:${e.color}"></span>
+                      <span style="margin-right: 8px;">Affiliation: </span>
+                      <span style="margin-inline-start: auto;">${e.data[5].join(",  ")}  </span>
+                    </div>
+                    <div class="flex-row" >
+                      <span class="canvas-tooltip__circle" style="--canvas-tooltip__color:${e.color}"></span>
+                      <span style="margin-right: 8px;">Parameters: </span>
+                      <span style="margin-inline-start: auto;">${Math.ceil(e.data[2]*100)/100} B </span>
+                    </div>
+            </div>`}},legend:{data:[...Object.keys(n).filter(e=>e.includes("Text")),...Object.keys(n).filter(e=>!e.includes("Text")).sort()],top:10},grid:{bottom:88,left:68,right:48},xAxis:{type:"time",interval:24*60*60*1e3*30,min(e){return e.min-24*60*60*1e3*30},max(e){return e.max+24*60*60*1e3*30*2},splitLine:{show:!0,lineStyle:{color:"#fff",alignWithLabel:!0}},axisTick:{show:!1,alignWithLabel:!0},axisLine:{show:!1},axisLabel:{showMinLabel:!0,formatter(e,a){if(a%3===0)return`${new Date(e).getFullYear()}-${new Date(e).getMonth()+1}`}}},yAxis:{type:"value",min:-1,splitLine:{show:!0,lineStyle:{color:"#fff"}},axisTick:{show:!1},axisLine:{show:!1},axisLabel:{show:!0,formatter(e){return`{a|2}{b|${e}}`},rich:{b:{fontSize:10,padding:[10,0,0,2]}}}},series:Object.keys(n).map(e=>{var a;return{name:e,data:n[e],type:"scatter",symbolSize:function(o){return o[1]*3+10},label:{show:!1,formatter:function(o){return o.data[3]},rotate:45,color:"#000",fontSize:8},itemStyle:{color:(a=g[e])!=null?a:`rgba(${Math.random()*255},${Math.random()*255},${Math.random()*255},1)`},emphasis:{label:{show:!0,formatter:function(o){return o.data.at(-1)==="MoE"?o.data[3]+" (MoE)":o.data[3]},rotate:0,position:"top",fontSize:14}}}})};P().value&&(i={tooltip:{show:!0,formatter(e){return`<div style="display:flex;flex-direction:column;row-gap:2px;">
+                    <div class="flex-row" >
+                      <span class="canvas-tooltip__circle" style="--canvas-tooltip__color:${e.color}"></span>
+                      <span style="margin-right: 8px;">Time: </span>
+                      <span style="margin-inline-start: auto;">${e.data[4]}</span>
+                    </div>
+                    <div class="flex-row" >
+                      <span class="canvas-tooltip__circle" style="--canvas-tooltip__color:${e.color}"></span>
+                      <span style="margin-right: 8px;">Name: </span>
+                      <span style="margin-inline-start: auto;"> ${e.data[3]}  </span>
+                    </div>
+                    <div class="flex-row" >
+                      <span class="canvas-tooltip__circle" style="--canvas-tooltip__color:${e.color}"></span>
+                      <span style="margin-right: 8px;">Affiliation: </span>
+                      <span style="margin-inline-start: auto;">${e.data[5].join(",  ")}  </span>
+                    </div>
+                    <div class="flex-row" >
+                      <span class="canvas-tooltip__circle" style="--canvas-tooltip__color:${e.color}"></span>
+                      <span style="margin-right: 8px;">Parameters: </span>
+                      <span style="margin-inline-start: auto;">${Math.ceil(e.data[2]*100)/100} B </span>
+                    </div>
+            </div>`},extraCssText:"transform:rotate(90deg)"},grid:{top:140,bottom:48,left:68},legend:{data:["Text (English)","Text (Chinese)","Text (Multilingual)","Text (Others)","Vision","Audio","Code"],top:10},xAxis:{type:"value",position:"top",splitLine:{show:!0,lineStyle:{color:"#fff"}},axisLabel:{show:!0,rotate:90,formatter(e){return`{a|2}{b|${e}}`},rich:{b:{fontSize:10,padding:[10,0,0,2]}}}},yAxis:{type:"time",inverse:!0,interval:24*60*60*1e3*30,min(e){return e.min-24*60*60*1e3*30},max(e){return e.max+24*60*60*1e3*30*2},splitLine:{show:!0,lineStyle:{color:"#fff"}},axisLabel:{rotate:-45,showMinLabel:!0,formatter(e,a){if(a%3===0)return`${new Date(e).getFullYear()}-${new Date(e).getMonth()+1}`}}},series:Object.keys(n).map(e=>({name:e,data:n[e].map(a=>{const o=a[0],l=a[1];return a[0]=l,a[1]=o,a}).reverse(),type:"scatter",symbolSize:function(a){return a[0]*2+2},label:{show:!1,formatter:function(a){return a.data[3]},rotate:45,color:"#000",fontSize:8},itemStyle:{color:g[e]}}))}),p.setOption(i),window.onresize=()=>{p.resize()}},1e3)}),B(()=>{p==null||p.dispose()}),(m,i)=>(T(),C("div",R,[W,_("div",Y,[q,D(_("div",G,[$(" Last updated: "+k(b(d))+" ",1),H,J],512),[[F,b(d)!=""]])])]))}});var Q=M(K,[["__scopeId","data-v-2a15577d"]]);const X={};function Z(c,p){const d=Q;return T(),I(d)}var te=M(X,[["render",Z]]);export{te as default};
