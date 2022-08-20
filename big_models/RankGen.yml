@@ -1,12 +1,14 @@
-name: Retro 
-release_date: 2021/12/08
+name: RankGen
+release_date: 2022/05/19
 affiliation:
-  - DeepMind
+  - University of Massachusetts Amherst
+  - Google Research
 language:
   - English
-paper/news: https://arxiv.org/abs/2112.04426
+paper/news: https://arxiv.org/abs/2205.09726
 domain:
   - Text
 parameters_dense:
-  - 1.5B
-  - 7.5B
+  - 1.2B
+model: https://huggingface.co/kalpeshk2011
+code: https://github.com/martiansideofthemoon/rankgen
