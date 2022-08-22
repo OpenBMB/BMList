@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/08/05"
+        "last_updated": "2022/08/22"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -1968,6 +1968,26 @@
         "parameters_dense": [
             "1.2B"
         ]
+    },
+    {
+        "name": "RankGen",
+        "release_date": "2022/05/19",
+        "affiliation": [
+            "University of Massachusetts Amherst",
+            "Google Research"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2205.09726",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "1.2B"
+        ],
+        "model": "https://huggingface.co/kalpeshk2011",
+        "code": "https://github.com/martiansideofthemoon/rankgen"
     },
     {
         "name": "ERNIE 3.0 Zeus",
