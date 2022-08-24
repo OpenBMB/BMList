@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/08/03"
+        "last_updated": "2022/08/22"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -1970,6 +1970,26 @@
         ]
     },
     {
+        "name": "RankGen",
+        "release_date": "2022/05/19",
+        "affiliation": [
+            "University of Massachusetts Amherst",
+            "Google"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2205.09726",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "1.2B"
+        ],
+        "model": "https://huggingface.co/kalpeshk2011",
+        "code": "https://github.com/martiansideofthemoon/rankgen"
+    },
+    {
         "name": "ERNIE 3.0 Zeus",
         "release_date": "2022/05/20",
         "affiliation": [
@@ -2257,5 +2277,26 @@
             "3B",
             "15B"
         ]
+    },
+    {
+        "name": "GLM-130B",
+        "release_date": "2022/08/05",
+        "affiliation": [
+            "Tsinghua University",
+            "Zhipu.AI"
+        ],
+        "language": [
+            "English",
+            "Chinese"
+        ],
+        "paper/news": "http://keg.cs.tsinghua.edu.cn/glm-130b/posts/glm-130b/",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "130B"
+        ],
+        "model": "https://docs.google.com/forms/d/e/1FAIpQLSehr5Dh_i3TwACmFFi8QEgIVNYGmSPwV0GueIcsUev0NEfUug/viewform",
+        "code": "https://github.com/THUDM/GLM-130B"
     }
 ]
