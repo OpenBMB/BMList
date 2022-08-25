@@ -1,12 +1,12 @@
-name: AlphaCode
-release_date: 2022/03/16
+name: Atlas
+release_date: 2022/08/08
 affiliation:
-  - DeepMind
-paper/news: https://arxiv.org/abs/2203.07814
+  - Meta AI Research
+  - ENS, PSL University
+  - University College London
+paper/news: https://arxiv.org/abs/2208.03299
 domain:
-  - Code
+  - Text
 parameters_dense:
-  - 1.1B
-  - 2.8B
-  - 8.7B
-  - 41.1B
+  - 3B
+  - 11B
