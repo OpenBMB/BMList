@@ -1,0 +1,12 @@
+name: CoAtNet
+release_date: 2021/09/15
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/2106.04803
+domain:
+  - Vision
+parameters_dense:
+  - 1.47B
+  - 2.44B
