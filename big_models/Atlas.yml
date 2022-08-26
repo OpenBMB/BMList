@@ -4,10 +4,12 @@ affiliation:
   - Meta
   - ENS, PSL University
   - University College London
-  - INRIA
+  - Inria
 paper/news: https://arxiv.org/abs/2208.03299
 domain:
   - Text
+language:
+  - English
 parameters_dense:
   - 3B
   - 11B
