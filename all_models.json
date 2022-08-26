@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/08/22"
+        "last_updated": "2022/08/26"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -836,6 +836,24 @@
             "39B",
             "82B",
             "204B"
+        ]
+    },
+    {
+        "name": "CoAtNet",
+        "release_date": "2021/09/15",
+        "affiliation": [
+            "Google"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2106.04803",
+        "domain": [
+            "Vision"
+        ],
+        "parameters_dense": [
+            "1.47B",
+            "2.44B"
         ]
     },
     {
@@ -2298,5 +2316,26 @@
         ],
         "model": "https://docs.google.com/forms/d/e/1FAIpQLSehr5Dh_i3TwACmFFi8QEgIVNYGmSPwV0GueIcsUev0NEfUug/viewform",
         "code": "https://github.com/THUDM/GLM-130B"
+    },
+    {
+        "name": "Atlas",
+        "release_date": "2022/08/08",
+        "affiliation": [
+            "Meta",
+            "ENS, PSL University",
+            "University College London",
+            "Inria"
+        ],
+        "paper/news": "https://arxiv.org/abs/2208.03299",
+        "domain": [
+            "Text"
+        ],
+        "language": [
+            "English"
+        ],
+        "parameters_dense": [
+            "3B",
+            "11B"
+        ]
     }
 ]
