@@ -1,9 +1,10 @@
 name: Atlas
 release_date: 2022/08/08
 affiliation:
-  - Meta AI Research
+  - Meta
   - ENS, PSL University
   - University College London
+  - INRIA
 paper/news: https://arxiv.org/abs/2208.03299
 domain:
   - Text
