@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/08/26"
+        "last_updated": "2022/08/29"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -2337,5 +2337,25 @@
             "3B",
             "11B"
         ]
+    },
+    {
+        "name": "BEiT-3",
+        "release_date": "2022/08/22",
+        "affiliation": [
+            "Microsoft"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2208.10442",
+        "domain": [
+            "Vision",
+            "Text"
+        ],
+        "parameters_dense": [
+            "1.9B"
+        ],
+        "model": "https://huggingface.co/docs/transformers/main/model_doc/beit",
+        "code": "https://github.com/microsoft/unilm/tree/master/beit"
     }
 ]
