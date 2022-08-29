@@ -13,11 +13,7 @@ def validate_yaml_files(main_path, schema):
     for file in files:
         f = open(os.path.join(main_path, file), "r")
         data = yaml.load(f.read(), Loader=yaml.FullLoader)
-        try:
-            jsonschema.validate(instance=data, schema=schema)
-        except jsonschema.exceptions.ValidationError as e:
-            print("The format of '{}' is incorrect. See the error message below: \n".format(file))
-            print(e)
+        jsonschema.validate(instance=data, schema=schema)
 
 
 if __name__ == "__main__":
