@@ -9,3 +9,4 @@ domain:
   - Text
 parameters_dense:
   - 27B
+code: https://github.com/alibaba/AliceMind/tree/main/PLUG
