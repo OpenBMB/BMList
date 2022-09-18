@@ -1,0 +1,17 @@
+name: BlenderBot 3
+release_date: 2020/08/05
+affiliation:
+  - Meta
+  - Mila
+  - McGill University
+language:
+  - English
+paper/news: https://arxiv.org/abs/2208.03188
+domain:
+  - Text
+parameters_dense:
+  - 3B
+  - 30B
+  - 175B
+model: https://github.com/facebookresearch/ParlAI/tree/main/projects/bb3
+code: https://github.com/facebookresearch/ParlAI/tree/main/projects/bb3

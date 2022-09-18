@@ -1,0 +1,12 @@
+name: AlexaTM
+release_date: 2022/06/15
+affiliation:
+  - Amazon
+paper/news: https://arxiv.org/abs/2206.07808
+domain:
+  - Text
+language:
+  - Multilingual
+parameters_dense:
+  - 2.68B
+  - 9.9B

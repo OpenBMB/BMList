@@ -1,0 +1,14 @@
+name: FIM
+release_date: 2022/07/28
+affiliation:
+  - OpenAI
+language:
+  - English
+paper/news: https://arxiv.org/abs/2207.14255
+domain:
+  - Text
+  - Code
+parameters_dense:
+  - 1.4B
+  - 2.8B
+  - 6.9B

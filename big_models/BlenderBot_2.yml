@@ -1,0 +1,13 @@
+name: BlenderBot 2
+release_date: 2021/07/16
+affiliation:
+  - Facebook
+language:
+  - English
+paper/news: https://ai.facebook.com/blog/blender-bot-2-an-open-source-chatbot-that-builds-long-term-memory-and-searches-the-internet/
+domain:
+  - Text
+parameters_dense:
+  - 2.7B
+model: https://parl.ai/projects/blenderbot2/
+code: https://parl.ai/projects/blenderbot2/

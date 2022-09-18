@@ -1,0 +1,12 @@
+name: AlexaTM 20B
+release_date: 2022/08/02
+affiliation:
+  - Amazon
+paper/news: https://arxiv.org/abs/2208.01448
+domain:
+  - Text
+language:
+  - Multilingual
+parameters_dense:
+  - 20B
+model: https://github.com/amazon-research/alexa-teacher-models
