@@ -12,3 +12,5 @@ parameters_dense:
   - 3B
   - 7B
   - 10B
+model: https://github.com/OpenBMB/CPM-Live/tree/master/cpm-live#model-checkpoints
+code: https://github.com/OpenBMB/CPM-Live/tree/master/cpm-live
