@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/09/23"
+        "last_updated": "2022/09/24"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -132,6 +132,21 @@
         ],
         "parameters_dense": [
             "17B"
+        ]
+    },
+    {
+        "name": "ProGen",
+        "release_date": "2020/03/08",
+        "affiliation": [
+            "Salesforce",
+            "Stanford University"
+        ],
+        "paper/news": "https://arxiv.org/abs/2004.03497",
+        "domain": [
+            "Protein"
+        ],
+        "parameters_dense": [
+            "1.2B"
         ]
     },
     {
@@ -744,6 +759,28 @@
         "api": "http://beta.openai.com/codex-waitlist"
     },
     {
+        "name": "ProtTrans",
+        "release_date": "2021/07/07",
+        "affiliation": [
+            "Technical University of Munich",
+            "Med AI Technology",
+            "Google",
+            "NVIDIA",
+            "Seoul National University",
+            "Oak Ridge National Laboratory"
+        ],
+        "paper/news": "https://doi.org/10.1109/TPAMI.2021.3095381",
+        "domain": [
+            "Protein"
+        ],
+        "parameters_dense": [
+            "3B",
+            "11B"
+        ],
+        "model": "https://github.com/agemagician/ProtTrans#%EF%B8%8F-models-availability",
+        "code": "https://github.com/agemagician/ProtTrans"
+    },
+    {
         "name": "BlenderBot 2",
         "release_date": "2021/07/16",
         "affiliation": [
@@ -818,6 +855,24 @@
             "178B"
         ],
         "api": "https://studio.ai21.com/playground"
+    },
+    {
+        "name": "ProteinLM",
+        "release_date": "2021/08/17",
+        "affiliation": [
+            "Tsinghua University",
+            "BAAI",
+            "Tencent"
+        ],
+        "paper/news": "https://arxiv.org/abs/2108.07435",
+        "domain": [
+            "Protein"
+        ],
+        "parameters_dense": [
+            "3B"
+        ],
+        "model": "https://github.com/THUDM/ProteinLM#download-proteinlm",
+        "code": "https://github.com/THUDM/ProteinLM"
     },
     {
         "name": "FLAN",
@@ -2358,7 +2413,7 @@
         "code": "https://github.com/huggingface/transformers/tree/main/src/transformers/models/bloom"
     },
     {
-        "name": "ESM2",
+        "name": "ESM-2",
         "release_date": "2022/07/21",
         "affiliation": [
             "Meta",
