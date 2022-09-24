@@ -1,0 +1,13 @@
+name: Whisper
+release_date: 2022/09/21
+affiliation:
+  - OpenAI
+language:
+  - Multilingual
+paper/news: https://cdn.openai.com/papers/whisper.pdf
+domain:
+  - Audio
+parameters_dense:
+  - 1.55B
+model: https://github.com/openai/whisper
+code: https://github.com/openai/whisper
