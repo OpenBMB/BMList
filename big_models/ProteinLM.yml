@@ -1,0 +1,13 @@
+name: ProteinLM
+release_date: 2021/08/17
+affiliation:
+  - Tsinghua University
+  - BAAI
+  - Tencent
+paper/news: https://arxiv.org/abs/2108.07435
+domain:
+  - Protein
+parameters_dense:
+  - 3B
+model: https://github.com/THUDM/ProteinLM#download-proteinlm
+code: https://github.com/THUDM/ProteinLM
