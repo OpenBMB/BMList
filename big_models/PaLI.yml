@@ -1,0 +1,14 @@
+name: PaLI
+release_date: 2022/09/14
+affiliation:
+  - Google
+language:
+  - Multilingual
+paper/news: https://arxiv.org/abs/2209.06794
+domain:
+  - Text
+  - Vision
+parameters_dense:
+  - 3B
+  - 15B
+  - 17B

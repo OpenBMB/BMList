@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/08/29"
+        "last_updated": "2022/09/24"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -135,7 +135,22 @@
         ]
     },
     {
-        "name": "Blender",
+        "name": "ProGen",
+        "release_date": "2020/03/08",
+        "affiliation": [
+            "Salesforce",
+            "Stanford University"
+        ],
+        "paper/news": "https://arxiv.org/abs/2004.03497",
+        "domain": [
+            "Protein"
+        ],
+        "parameters_dense": [
+            "1.2B"
+        ]
+    },
+    {
+        "name": "BlenderBot 1",
         "release_date": "2020/04/28",
         "affiliation": [
             "Facebook"
@@ -250,6 +265,29 @@
         ],
         "model": "https://github.com/PaddlePaddle/Knover/blob/develop/projects/PLATO-2/README.md#pre-trained-dialogue-generation-model",
         "code": "https://github.com/PaddlePaddle/Knover/"
+    },
+    {
+        "name": "BlenderBot 3",
+        "release_date": "2020/08/05",
+        "affiliation": [
+            "Meta",
+            "Mila",
+            "McGill University"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2208.03188",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "3B",
+            "30B",
+            "175B"
+        ],
+        "model": "https://github.com/facebookresearch/ParlAI/tree/main/projects/bb3",
+        "code": "https://github.com/facebookresearch/ParlAI/tree/main/projects/bb3"
     },
     {
         "name": "M2M-100",
@@ -721,6 +759,47 @@
         "api": "http://beta.openai.com/codex-waitlist"
     },
     {
+        "name": "ProtTrans",
+        "release_date": "2021/07/07",
+        "affiliation": [
+            "Technical University of Munich",
+            "Med AI Technology",
+            "Google",
+            "NVIDIA",
+            "Seoul National University",
+            "Oak Ridge National Laboratory"
+        ],
+        "paper/news": "https://doi.org/10.1109/TPAMI.2021.3095381",
+        "domain": [
+            "Protein"
+        ],
+        "parameters_dense": [
+            "3B",
+            "11B"
+        ],
+        "model": "https://github.com/agemagician/ProtTrans#%EF%B8%8F-models-availability",
+        "code": "https://github.com/agemagician/ProtTrans"
+    },
+    {
+        "name": "BlenderBot 2",
+        "release_date": "2021/07/16",
+        "affiliation": [
+            "Facebook"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://ai.facebook.com/blog/blender-bot-2-an-open-source-chatbot-that-builds-long-term-memory-and-searches-the-internet/",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "2.7B"
+        ],
+        "model": "https://parl.ai/projects/blenderbot2/",
+        "code": "https://parl.ai/projects/blenderbot2/"
+    },
+    {
         "name": "EVA",
         "release_date": "2021/08/03",
         "affiliation": [
@@ -776,6 +855,24 @@
             "178B"
         ],
         "api": "https://studio.ai21.com/playground"
+    },
+    {
+        "name": "ProteinLM",
+        "release_date": "2021/08/17",
+        "affiliation": [
+            "Tsinghua University",
+            "BAAI",
+            "Tencent"
+        ],
+        "paper/news": "https://arxiv.org/abs/2108.07435",
+        "domain": [
+            "Protein"
+        ],
+        "parameters_dense": [
+            "3B"
+        ],
+        "model": "https://github.com/THUDM/ProteinLM#download-proteinlm",
+        "code": "https://github.com/THUDM/ProteinLM"
     },
     {
         "name": "FLAN",
@@ -1498,6 +1595,25 @@
         "api": "https://wenxin.baidu.com/younger/apiDetail?id=20008"
     },
     {
+        "name": "CM3",
+        "release_date": "2022/01/19",
+        "affiliation": [
+            "Facebook"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2201.07520",
+        "domain": [
+            "Text",
+            "Vision"
+        ],
+        "parameters_dense": [
+            "2.7B",
+            "13B"
+        ]
+    },
+    {
         "name": "LaMDA",
         "release_date": "2022/01/20",
         "affiliation": [
@@ -2098,6 +2214,24 @@
         "code": "https://github.com/microsoft/Swin-Transformer"
     },
     {
+        "name": "AlexaTM",
+        "release_date": "2022/06/15",
+        "affiliation": [
+            "Amazon"
+        ],
+        "paper/news": "https://arxiv.org/abs/2206.07808",
+        "domain": [
+            "Text"
+        ],
+        "language": [
+            "Multilingual"
+        ],
+        "parameters_dense": [
+            "2.68B",
+            "9.9B"
+        ]
+    },
+    {
         "name": "Unified-IO",
         "release_date": "2022/06/17",
         "affiliation": [
@@ -2279,7 +2413,7 @@
         "code": "https://github.com/huggingface/transformers/tree/main/src/transformers/models/bloom"
     },
     {
-        "name": "ESM2",
+        "name": "ESM-2",
         "release_date": "2022/07/21",
         "affiliation": [
             "Meta",
@@ -2295,6 +2429,58 @@
             "3B",
             "15B"
         ]
+    },
+    {
+        "name": "PanGu-Coder",
+        "release_date": "2022/07/22",
+        "affiliation": [
+            "Huawei"
+        ],
+        "paper/news": "https://arxiv.org/abs/2207.11280",
+        "domain": [
+            "Code"
+        ],
+        "parameters_dense": [
+            "2.6B"
+        ]
+    },
+    {
+        "name": "FIM",
+        "release_date": "2022/07/28",
+        "affiliation": [
+            "OpenAI"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2207.14255",
+        "domain": [
+            "Text",
+            "Code"
+        ],
+        "parameters_dense": [
+            "1.4B",
+            "2.8B",
+            "6.9B"
+        ]
+    },
+    {
+        "name": "AlexaTM 20B",
+        "release_date": "2022/08/02",
+        "affiliation": [
+            "Amazon"
+        ],
+        "paper/news": "https://arxiv.org/abs/2208.01448",
+        "domain": [
+            "Text"
+        ],
+        "language": [
+            "Multilingual"
+        ],
+        "parameters_dense": [
+            "20B"
+        ],
+        "model": "https://github.com/amazon-research/alexa-teacher-models"
     },
     {
         "name": "GLM-130B",
@@ -2357,5 +2543,83 @@
         ],
         "model": "https://huggingface.co/docs/transformers/main/model_doc/beit",
         "code": "https://github.com/microsoft/unilm/tree/master/beit"
+    },
+    {
+        "name": "PaLI",
+        "release_date": "2022/09/14",
+        "affiliation": [
+            "Google"
+        ],
+        "language": [
+            "Multilingual"
+        ],
+        "paper/news": "https://arxiv.org/abs/2209.06794",
+        "domain": [
+            "Text",
+            "Vision"
+        ],
+        "parameters_dense": [
+            "3B",
+            "15B",
+            "17B"
+        ]
+    },
+    {
+        "name": "CPM-Ant",
+        "release_date": "2022/09/16",
+        "affiliation": [
+            "OpenBMB"
+        ],
+        "language": [
+            "Chinese"
+        ],
+        "paper/news": "https://www.openbmb.org/en/community/blogs/blogpage?id=98afef2ce45f4fe9a4bc15a66d7ccb92",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "1B",
+            "3B",
+            "7B",
+            "10B"
+        ],
+        "model": "https://github.com/OpenBMB/CPM-Live/tree/master/cpm-live#model-checkpoints",
+        "code": "https://github.com/OpenBMB/CPM-Live/tree/master/cpm-live"
+    },
+    {
+        "name": "CodeGeeX",
+        "release_date": "2022/09/19",
+        "affiliation": [
+            "Tsinghua University",
+            "Peng Cheng Laboratory",
+            "Zhipu.AI"
+        ],
+        "paper/news": "http://keg.cs.tsinghua.edu.cn/codegeex/",
+        "domain": [
+            "Code"
+        ],
+        "parameters_dense": [
+            "13B"
+        ],
+        "code": "https://github.com/THUDM/CodeGeeX"
+    },
+    {
+        "name": "Whisper",
+        "release_date": "2022/09/21",
+        "affiliation": [
+            "OpenAI"
+        ],
+        "language": [
+            "Multilingual"
+        ],
+        "paper/news": "https://cdn.openai.com/papers/whisper.pdf",
+        "domain": [
+            "Audio"
+        ],
+        "parameters_dense": [
+            "1.55B"
+        ],
+        "model": "https://github.com/openai/whisper",
+        "code": "https://github.com/openai/whisper"
     }
 ]

@@ -1,0 +1,16 @@
+name: CPM-Ant
+release_date: 2022/09/16
+affiliation:
+  - OpenBMB
+language:
+  - Chinese
+paper/news: https://www.openbmb.org/en/community/blogs/blogpage?id=98afef2ce45f4fe9a4bc15a66d7ccb92
+domain:
+  - Text
+parameters_dense:
+  - 1B
+  - 3B
+  - 7B
+  - 10B
+model: https://github.com/OpenBMB/CPM-Live/tree/master/cpm-live#model-checkpoints
+code: https://github.com/OpenBMB/CPM-Live/tree/master/cpm-live

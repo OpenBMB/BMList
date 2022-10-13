@@ -1,0 +1,12 @@
+name: CodeGeeX
+release_date: 2022/09/19
+affiliation:
+  - Tsinghua University
+  - Peng Cheng Laboratory
+  - Zhipu.AI
+paper/news: http://keg.cs.tsinghua.edu.cn/codegeex/
+domain:
+  - Code
+parameters_dense:
+  - 13B
+code: https://github.com/THUDM/CodeGeeX

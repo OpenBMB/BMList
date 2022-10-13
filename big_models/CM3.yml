@@ -1,0 +1,13 @@
+name: CM3
+release_date: 2022/01/19
+affiliation:
+  - Facebook
+language:
+  - English
+paper/news: https://arxiv.org/abs/2201.07520
+domain:
+  - Text
+  - Vision
+parameters_dense:
+  - 2.7B
+  - 13B

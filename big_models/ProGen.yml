@@ -1,0 +1,10 @@
+name: ProGen
+release_date: 2020/03/08
+affiliation:
+  - Salesforce
+  - Stanford University
+paper/news: https://arxiv.org/abs/2004.03497
+domain:
+  - Protein
+parameters_dense:
+  - 1.2B

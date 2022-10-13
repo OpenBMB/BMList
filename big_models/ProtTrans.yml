@@ -1,0 +1,17 @@
+name: ProtTrans
+release_date: 2021/07/07
+affiliation:
+  - Technical University of Munich
+  - Med AI Technology
+  - Google
+  - NVIDIA
+  - Seoul National University
+  - Oak Ridge National Laboratory
+paper/news: https://doi.org/10.1109/TPAMI.2021.3095381
+domain:
+  - Protein
+parameters_dense:
+  - 3B
+  - 11B
+model: https://github.com/agemagician/ProtTrans#%EF%B8%8F-models-availability
+code: https://github.com/agemagician/ProtTrans
