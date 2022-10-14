@@ -1,0 +1,14 @@
+name: WeLM
+release_date: 2022/10/12
+affiliation:
+  - Tencent
+language:
+  - Chinese
+paper/news: https://arxiv.org/abs/2209.10372
+domain:
+  - Text
+parameters_dense:
+  - 1.3B
+  - 2.7B
+  - 10B
+api: https://welm.weixin.qq.com/docs/api/

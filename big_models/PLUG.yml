@@ -9,3 +9,5 @@ domain:
   - Text
 parameters_dense:
   - 27B
+model: https://www.alice-mind.com/portal#/
+code: https://github.com/alibaba/AliceMind/tree/main/PLUG
