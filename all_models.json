@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/09/24"
+        "last_updated": "2022/10/14"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -509,7 +509,9 @@
         ],
         "parameters_dense": [
             "27B"
-        ]
+        ],
+        "model": "https://www.alice-mind.com/portal#/",
+        "code": "https://github.com/alibaba/AliceMind/tree/main/PLUG"
     },
     {
         "name": "PanGu(盘古)-α",
@@ -2621,5 +2623,25 @@
         ],
         "model": "https://github.com/openai/whisper",
         "code": "https://github.com/openai/whisper"
+    },
+    {
+        "name": "WeLM",
+        "release_date": "2022/10/12",
+        "affiliation": [
+            "Tencent"
+        ],
+        "language": [
+            "Chinese"
+        ],
+        "paper/news": "https://arxiv.org/abs/2209.10372",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "1.3B",
+            "2.7B",
+            "10B"
+        ],
+        "api": "https://welm.weixin.qq.com/docs/api/"
     }
 ]
