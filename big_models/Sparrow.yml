@@ -1,0 +1,11 @@
+name: Sparrow
+release_date: 2022/09/20
+affiliation:
+  - DeepMind
+language:
+  - English
+paper/news: https://arxiv.org/abs/2209.14375
+domain:
+  - Text
+parameters_dense:
+  - 70B

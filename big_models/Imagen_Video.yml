@@ -1,0 +1,12 @@
+name: Imagen Video
+release_date: 2022/10/05
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/abs/2210.02303
+domain:
+  - Vision
+  - Text
+parameters_dense:
+  - 11.6B
