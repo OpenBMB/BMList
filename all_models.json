@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/10/14"
+        "last_updated": "2022/10/20"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -2606,6 +2606,23 @@
         "code": "https://github.com/THUDM/CodeGeeX"
     },
     {
+        "name": "Sparrow",
+        "release_date": "2022/09/20",
+        "affiliation": [
+            "DeepMind"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2209.14375",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "70B"
+        ]
+    },
+    {
         "name": "Whisper",
         "release_date": "2022/09/21",
         "affiliation": [
@@ -2623,6 +2640,24 @@
         ],
         "model": "https://github.com/openai/whisper",
         "code": "https://github.com/openai/whisper"
+    },
+    {
+        "name": "Imagen Video",
+        "release_date": "2022/10/05",
+        "affiliation": [
+            "Google"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2210.02303",
+        "domain": [
+            "Vision",
+            "Text"
+        ],
+        "parameters_dense": [
+            "11.6B"
+        ]
     },
     {
         "name": "WeLM",
