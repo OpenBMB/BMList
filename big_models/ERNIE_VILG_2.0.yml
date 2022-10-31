@@ -1,0 +1,12 @@
+name: ERNIE-ViLG 2.0
+release_date: 2022/10/27
+affiliation:
+  - Baidu
+language:
+  - Chinese
+paper/news: https://arxiv.org/abs/2210.15257
+domain:
+  - Text
+  - Vision
+parameters_dense:
+  - 24B

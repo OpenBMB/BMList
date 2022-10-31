@@ -9,4 +9,3 @@ domain:
   - Text
 parameters_dense:
   - 3.2B
-code: https://arxiv.org/pdf/2203.00555.pdf
