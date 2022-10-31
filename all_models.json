@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/10/20"
+        "last_updated": "2022/10/31"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -1721,8 +1721,7 @@
         ],
         "parameters_dense": [
             "3.2B"
-        ],
-        "code": "https://arxiv.org/pdf/2203.00555.pdf"
+        ]
     },
     {
         "name": "InstructGPT",
@@ -2660,6 +2659,23 @@
         ]
     },
     {
+        "name": "Magneto",
+        "release_date": "2022/10/12",
+        "affiliation": [
+            "Microsoft"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2210.06423",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "1B"
+        ]
+    },
+    {
         "name": "WeLM",
         "release_date": "2022/10/12",
         "affiliation": [
@@ -2678,5 +2694,23 @@
             "10B"
         ],
         "api": "https://welm.weixin.qq.com/docs/api/"
+    },
+    {
+        "name": "ERNIE-ViLG 2.0",
+        "release_date": "2022/10/27",
+        "affiliation": [
+            "Baidu"
+        ],
+        "language": [
+            "Chinese"
+        ],
+        "paper/news": "https://arxiv.org/abs/2210.15257",
+        "domain": [
+            "Text",
+            "Vision"
+        ],
+        "parameters_dense": [
+            "24B"
+        ]
     }
 ]
