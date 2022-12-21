@@ -1,0 +1,13 @@
+name: GPT-JT
+release_date: 2021/11/29
+affiliation:
+  - Together
+language:
+  - English
+paper/news: https://www.together.xyz/blog/releasing-v1-of-gpt-jt-powered-by-open-source-ai
+domain:
+  - Text
+parameters_dense:
+  - 6B
+model: https://huggingface.co/togethercomputer/GPT-JT-6B-v1
+code: https://huggingface.co/togethercomputer/GPT-JT-6B-v1
