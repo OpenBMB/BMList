@@ -1,0 +1,12 @@
+name: ChatGPT
+release_date: 2022/11/30
+affiliation:
+  - OpenAI
+language:
+  - Multilingual
+paper/news: https://openai.com/blog/chatgpt/
+domain:
+  - Text
+parameters_dense:
+  - ~100B # unknown
+api: https://chat.openai.com/
