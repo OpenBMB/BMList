@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/10/31"
+        "last_updated": "2022/12/21"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -1374,6 +1374,25 @@
         "code": "https://github.com/IDEA-CCNL/Fengshenbang-LM/tree/main/fengshen/models/roformer"
     },
     {
+        "name": "GPT-JT",
+        "release_date": "2021/11/29",
+        "affiliation": [
+            "Together"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://www.together.xyz/blog/releasing-v1-of-gpt-jt-powered-by-open-source-ai",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "6B"
+        ],
+        "model": "https://huggingface.co/togethercomputer/GPT-JT-6B-v1",
+        "code": "https://huggingface.co/togethercomputer/GPT-JT-6B-v1"
+    },
+    {
         "name": "CodeParrot",
         "release_date": "2021/12/08",
         "affiliation": [
@@ -2711,6 +2730,26 @@
         ],
         "parameters_dense": [
             "24B"
+        ]
+    },
+    {
+        "name": "Galactica",
+        "release_date": "2022/11/16",
+        "affiliation": [
+            "Meta"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2211.09085",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "1.3B",
+            "6.7B",
+            "30B",
+            "120B"
         ]
     }
 ]
