@@ -1,0 +1,11 @@
+name: MOSS
+release_date: 2023/04/21
+affiliation:
+  - OpenLMLab
+paper/news: https://github.com/OpenLMLab/MOSS
+domain:
+  - Text
+language:
+  - Multilingual
+parameters_dense:
+  - 16B
