@@ -1,6 +1,6 @@
 [
     {
-        "last_updated": "2022/12/21"
+        "last_updated": "2023/06/01"
     },
     {
         "name": "Sparsely-Gate MOE",
@@ -2769,5 +2769,22 @@
             "~100B"
         ],
         "api": "https://chat.openai.com/"
+    },
+    {
+        "name": "MOSS",
+        "release_date": "2023/04/21",
+        "affiliation": [
+            "OpenLMLab"
+        ],
+        "paper/news": "https://github.com/OpenLMLab/MOSS",
+        "domain": [
+            "Text"
+        ],
+        "language": [
+            "Multilingual"
+        ],
+        "parameters_dense": [
+            "16B"
+        ]
     }
 ]
