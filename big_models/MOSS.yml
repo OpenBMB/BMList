@@ -9,3 +9,5 @@ language:
   - Multilingual
 parameters_dense:
   - 16B
+model: https://github.com/OpenLMLab/MOSS
+code: https://github.com/OpenLMLab/MOSS
