@@ -1,0 +1,15 @@
+name: ChatGLM
+release_date: 2023/03/13
+affiliation:
+  - Tsinghua University
+  - Zhipu.AI
+paper/news: https://github.com/THUDM/ChatGLM-6B
+language:
+  - English
+  - Chinese
+domain:
+  - Text
+parameters_dense:
+  - 6B
+model: https://github.com/THUDM/ChatGLM-6B
+code: https://github.com/THUDM/ChatGLM-6B

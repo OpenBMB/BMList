@@ -1,0 +1,12 @@
+name: CoLT5
+release_date: 2023/03/17
+affiliation:
+  - Google
+language:
+  - English
+paper/news: https://arxiv.org/pdf/2303.09752.pdf
+domain:
+  - Text
+parameters_dense:
+  - 1.4B
+  - 5.2B

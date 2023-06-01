@@ -1,0 +1,18 @@
+name: CPM-Bee
+release_date: 2023/05/27
+affiliation:
+  - OpenBMB
+  - ModelBest
+language:
+  - Chinese
+  - English
+paper/news: https://github.com/OpenBMB/CPM-Bee
+domain:
+  - Text
+parameters_dense:
+  - 1B
+  - 2B
+  - 5B
+  - 10B
+model: https://github.com/OpenBMB/CPM-Bee
+code: https://github.com/OpenBMB/CPM-Bee

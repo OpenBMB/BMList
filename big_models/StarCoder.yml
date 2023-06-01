@@ -1,0 +1,11 @@
+name: StarCoder
+release_date: 2023/05/04
+affiliation:
+  - Hugging Face # et al.
+paper/news: https://arxiv.org/abs/2305.06161
+domain:
+  - Code
+parameters_dense:
+  - 15.5B
+code: https://github.com/bigcode-project/Megatron-LM
+model: https://huggingface.co/bigcode/starcoder

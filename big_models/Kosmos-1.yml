@@ -1,0 +1,12 @@
+name: Kosmos-1
+release_date: 2023/02/27
+affiliation:
+  - Microsoft
+language:
+  - English
+paper/news: https://arxiv.org/pdf/2302.14045.pdf
+domain:
+  - Text
+  - Vision
+parameters_dense:
+  - 1.6B

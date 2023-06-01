@@ -1,0 +1,12 @@
+name: BloombergGPT
+release_date: 2023/03/30
+affiliation:
+  - Bloomberg
+  - Johns Hopkins University
+paper/news: https://arxiv.org/pdf/2303.17564.pdf
+language:
+  - English
+domain:
+  - Text
+parameters_dense:
+  - 50B

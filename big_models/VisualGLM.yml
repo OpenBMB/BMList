@@ -1,0 +1,16 @@
+name: VisualGLM
+release_date: 2023/05/17
+affiliation:
+  - Tsinghua University
+  - Zhipu.AI
+paper/news: https://github.com/THUDM/VisualGLM-6B
+language:
+  - English
+  - Chinese
+domain:
+  - Text
+  - Vision
+parameters_dense:
+  - 6B
+model: https://github.com/THUDM/VisualGLM-6B
+code: https://github.com/THUDM/VisualGLM-6B

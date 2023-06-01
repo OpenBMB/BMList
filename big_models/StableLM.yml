@@ -1,0 +1,14 @@
+name: StableLM
+release_date: 2023/04/20
+affiliation:
+  - Stability AI
+paper/news: https://github.com/stability-AI/stableLM/
+language:
+  - English
+domain:
+  - Text
+parameters_dense:
+  - 3B
+  - 7B
+code: https://github.com/stability-AI/stableLM/
+model: https://github.com/stability-AI/stableLM/

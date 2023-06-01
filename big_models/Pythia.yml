@@ -1,0 +1,17 @@
+name: Pythia
+release_date: 2023/04/20
+affiliation:
+  - EleutherAI
+paper/news: https://arxiv.org/pdf/2304.01373.pdf
+language:
+  - English
+domain:
+  - Text
+parameters_dense:
+  - 1B
+  - 1.4B
+  - 2.8B
+  - 6.9B
+  - 12B
+code: https://github.com/EleutherAI/pythia
+model: https://github.com/EleutherAI/pythia

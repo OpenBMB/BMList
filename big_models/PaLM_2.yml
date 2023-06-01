@@ -1,0 +1,11 @@
+name: PaLM 2
+release_date: 2023/04/20
+affiliation:
+  - Google
+paper/news: https://ai.google/static/documents/palm2techreport.pdf
+language:
+  - Multilingual
+domain:
+  - Text
+parameters_dense:
+  - 340B

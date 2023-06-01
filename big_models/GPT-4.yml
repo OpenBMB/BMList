@@ -1,0 +1,13 @@
+name: GPT-4
+release_date: 2023/03/14
+affiliation:
+  - OpenAI
+language:
+  - Multilingual
+paper/news: https://arxiv.org/abs/2303.08774
+domain:
+  - Text
+  - Vision
+parameters_dense:
+  - ~1000B # Unknown
+api: https://openai.com/waitlist/gpt-4-api

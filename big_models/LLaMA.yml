@@ -1,0 +1,16 @@
+name: LLaMA
+release_date: 2023/02/27
+affiliation:
+  - Meta
+language:
+  - English
+paper/news: https://arxiv.org/abs/2201.08239
+domain:
+  - Text
+parameters_dense:
+  - 7B
+  - 13B
+  - 33B
+  - 65B
+code: https://github.com/facebookresearch/llama
+model: https://github.com/facebookresearch/llama

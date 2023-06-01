@@ -1,0 +1,13 @@
+name: CodeT5+
+release_date: 2023/05/13
+affiliation:
+  - Salesforce
+paper/news: https://arxiv.org/abs/2305.07922
+domain:
+  - Code
+parameters_dense:
+  - 2B
+  - 6B
+  - 16B
+model: https://github.com/salesforce/CodeT5/tree/main/CodeT5+
+code: https://github.com/salesforce/CodeT5/tree/main/CodeT5+

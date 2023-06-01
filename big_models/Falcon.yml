@@ -1,0 +1,17 @@
+name: Falcon
+release_date: 2023/05/24
+affiliation:
+  - TII
+language:
+  - English
+  - German
+  - Spanish 
+  - French 
+paper/news: https://huggingface.co/tiiuae/falcon-40b
+domain:
+  - Text
+parameters_dense:
+  - 7B
+  - 40B
+model: https://huggingface.co/tiiuae/falcon-40b
+code: https://huggingface.co/tiiuae/falcon-40b
