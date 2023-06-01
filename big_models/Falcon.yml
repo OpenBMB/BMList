@@ -5,8 +5,8 @@ affiliation:
 language:
   - English
   - German
-  - Spanish 
-  - French 
+  - Spanish
+  - French
 paper/news: https://huggingface.co/tiiuae/falcon-40b
 domain:
   - Text
