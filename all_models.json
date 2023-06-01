@@ -2771,6 +2771,182 @@
         "api": "https://chat.openai.com/"
     },
     {
+        "name": "Kosmos-1",
+        "release_date": "2023/02/27",
+        "affiliation": [
+            "Microsoft"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/pdf/2302.14045.pdf",
+        "domain": [
+            "Text",
+            "Vision"
+        ],
+        "parameters_dense": [
+            "1.6B"
+        ]
+    },
+    {
+        "name": "LLaMA",
+        "release_date": "2023/02/27",
+        "affiliation": [
+            "Meta"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/abs/2201.08239",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "7B",
+            "13B",
+            "33B",
+            "65B"
+        ],
+        "code": "https://github.com/facebookresearch/llama",
+        "model": "https://github.com/facebookresearch/llama"
+    },
+    {
+        "name": "ChatGLM",
+        "release_date": "2023/03/13",
+        "affiliation": [
+            "Tsinghua University",
+            "Zhipu.AI"
+        ],
+        "paper/news": "https://github.com/THUDM/ChatGLM-6B",
+        "language": [
+            "English",
+            "Chinese"
+        ],
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "6B"
+        ],
+        "model": "https://github.com/THUDM/ChatGLM-6B",
+        "code": "https://github.com/THUDM/ChatGLM-6B"
+    },
+    {
+        "name": "GPT-4",
+        "release_date": "2023/03/14",
+        "affiliation": [
+            "OpenAI"
+        ],
+        "language": [
+            "Multilingual"
+        ],
+        "paper/news": "https://arxiv.org/abs/2303.08774",
+        "domain": [
+            "Text",
+            "Vision"
+        ],
+        "parameters_dense": [
+            "~1000B"
+        ],
+        "api": "https://openai.com/waitlist/gpt-4-api"
+    },
+    {
+        "name": "CoLT5",
+        "release_date": "2023/03/17",
+        "affiliation": [
+            "Google"
+        ],
+        "language": [
+            "English"
+        ],
+        "paper/news": "https://arxiv.org/pdf/2303.09752.pdf",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "1.4B",
+            "5.2B"
+        ]
+    },
+    {
+        "name": "BloombergGPT",
+        "release_date": "2023/03/30",
+        "affiliation": [
+            "Bloomberg",
+            "Johns Hopkins University"
+        ],
+        "paper/news": "https://arxiv.org/pdf/2303.17564.pdf",
+        "language": [
+            "English"
+        ],
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "50B"
+        ]
+    },
+    {
+        "name": "PaLM 2",
+        "release_date": "2023/04/20",
+        "affiliation": [
+            "Google"
+        ],
+        "paper/news": "https://ai.google/static/documents/palm2techreport.pdf",
+        "language": [
+            "Multilingual"
+        ],
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "340B"
+        ]
+    },
+    {
+        "name": "Pythia",
+        "release_date": "2023/04/20",
+        "affiliation": [
+            "EleutherAI"
+        ],
+        "paper/news": "https://arxiv.org/pdf/2304.01373.pdf",
+        "language": [
+            "English"
+        ],
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "1B",
+            "1.4B",
+            "2.8B",
+            "6.9B",
+            "12B"
+        ],
+        "code": "https://github.com/EleutherAI/pythia",
+        "model": "https://github.com/EleutherAI/pythia"
+    },
+    {
+        "name": "StableLM",
+        "release_date": "2023/04/20",
+        "affiliation": [
+            "Stability AI"
+        ],
+        "paper/news": "https://github.com/stability-AI/stableLM/",
+        "language": [
+            "English"
+        ],
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "3B",
+            "7B"
+        ],
+        "code": "https://github.com/stability-AI/stableLM/",
+        "model": "https://github.com/stability-AI/stableLM/"
+    },
+    {
         "name": "MOSS",
         "release_date": "2023/04/21",
         "affiliation": [
@@ -2785,6 +2961,111 @@
         ],
         "parameters_dense": [
             "16B"
-        ]
+        ],
+        "model": "https://github.com/OpenLMLab/MOSS",
+        "code": "https://github.com/OpenLMLab/MOSS"
+    },
+    {
+        "name": "StarCoder",
+        "release_date": "2023/05/04",
+        "affiliation": [
+            "Hugging Face"
+        ],
+        "paper/news": "https://arxiv.org/abs/2305.06161",
+        "domain": [
+            "Code"
+        ],
+        "parameters_dense": [
+            "15.5B"
+        ],
+        "code": "https://github.com/bigcode-project/Megatron-LM",
+        "model": "https://huggingface.co/bigcode/starcoder"
+    },
+    {
+        "name": "CodeT5+",
+        "release_date": "2023/05/13",
+        "affiliation": [
+            "Salesforce"
+        ],
+        "paper/news": "https://arxiv.org/abs/2305.07922",
+        "domain": [
+            "Code"
+        ],
+        "parameters_dense": [
+            "2B",
+            "6B",
+            "16B"
+        ],
+        "model": "https://github.com/salesforce/CodeT5/tree/main/CodeT5+",
+        "code": "https://github.com/salesforce/CodeT5/tree/main/CodeT5+"
+    },
+    {
+        "name": "VisualGLM",
+        "release_date": "2023/05/17",
+        "affiliation": [
+            "Tsinghua University",
+            "Zhipu.AI"
+        ],
+        "paper/news": "https://github.com/THUDM/VisualGLM-6B",
+        "language": [
+            "English",
+            "Chinese"
+        ],
+        "domain": [
+            "Text",
+            "Vision"
+        ],
+        "parameters_dense": [
+            "6B"
+        ],
+        "model": "https://github.com/THUDM/VisualGLM-6B",
+        "code": "https://github.com/THUDM/VisualGLM-6B"
+    },
+    {
+        "name": "Falcon",
+        "release_date": "2023/05/24",
+        "affiliation": [
+            "TII"
+        ],
+        "language": [
+            "English",
+            "German",
+            "Spanish",
+            "French"
+        ],
+        "paper/news": "https://huggingface.co/tiiuae/falcon-40b",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "7B",
+            "40B"
+        ],
+        "model": "https://huggingface.co/tiiuae/falcon-40b",
+        "code": "https://huggingface.co/tiiuae/falcon-40b"
+    },
+    {
+        "name": "CPM-Bee",
+        "release_date": "2023/05/27",
+        "affiliation": [
+            "OpenBMB",
+            "ModelBest"
+        ],
+        "language": [
+            "Chinese",
+            "English"
+        ],
+        "paper/news": "https://github.com/OpenBMB/CPM-Bee",
+        "domain": [
+            "Text"
+        ],
+        "parameters_dense": [
+            "1B",
+            "2B",
+            "5B",
+            "10B"
+        ],
+        "model": "https://github.com/OpenBMB/CPM-Bee",
+        "code": "https://github.com/OpenBMB/CPM-Bee"
     }
 ]
