@@ -1,0 +1,16 @@
+name: BayLing(百聆)
+release_date: 2023/06/21
+affiliation:
+  - NLP Group of Institute of Computing Technology, Chinese Academy of Sciences (ICT/CAS)
+language:
+  - Chinese
+  - English
+paper/news: https://arxiv.org/abs/2306.10968
+domain:
+  - Text
+parameters_dense:
+  - 7B
+  - 13B
+model: hhttps://huggingface.co/ICTNLP/bayling-13b-diff
+code: https://github.com/ictnlp/BayLing
+api: http://nlp.ict.ac.cn/bayling/demo
